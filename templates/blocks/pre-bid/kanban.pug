@@ -1,0 +1,56 @@
+.layout(data-tab="kanban")
+  .column-grid.column-grid_kanban(id="kanban-grid")
+    .column-grid__options
+      .column-grid__drag-option.column-grid__drag-option_archive
+        .icon.icon_margin-right.icon_archive
+        | В архив
+      .column-grid__drag-option.column-grid__drag-option_create-bid
+        .icon.icon_margin-right.icon_bid
+        | Создать заявку
+      .column-grid__drag-option.column-grid__drag-option_abandon
+        .icon.icon_margin-right.icon_abandon-red
+        span.text.text_red Переместить в отказ
+    .column-grid__content-scroll
+      .column-grid__wrapper
+        each val in ["В обработке", "Первый контакт", "Подбор предложения", "Принимают решение"]
+          .column-grid__col
+            .column-grid__col-header
+              .column-grid__name= val
+              .column-grid__note 3 предзаявки: 400 000 руб.
+            .column-grid__list
+              each val in [1,2,3,4]
+                .column-grid__col-item.modal-target(data-modal="prebid-kanban-quickview", data-highlight="true")
+                  span.icon.icon__draggable.column-grid__draggable
+                  .kanban
+                    .kanban__item
+                      .kanban__text
+                        a.pseudo(href="#") Япония 05.05 - 20.05      
+                      .kanban__text.kanban__grey до 200 000 руб.
+                    .kanban__item.kanban__item_small
+                      .kanban__text Александр Эдуардович Сабуров
+                      .kanban__text.kanban__grey особый клиент
+                    .kanban__item.kanban__item_rows
+                      .data-list.data-list_small
+                        .data-list__row
+                          .data-list__name
+                            span.data-list__span Задача:
+                          .data-list__value
+                            a.pseudo(href="#") 12.20 20:48
+                        .data-list__row
+                          .data-list__name
+                            span.data-list__span Общение:
+                          .data-list__value
+                            a.pseudo.pseudo_orange(href="#") Просроченная задача
+                        .data-list__row
+                          .data-list__name
+                            span.data-list__span Актив.:
+                          .data-list__value Хорошая
+                        .data-list__row
+                          .data-list__name
+                            span.data-list__span Вероят.:
+                          .data-list__value
+                            .progress-bar.data-list__progress
+                              .progress-bar__line(style={"width": "45%"})
+                              .progress-bar__base
+                    .kanban__item
+                      .kanban__date Создана 20 августа в 20:00

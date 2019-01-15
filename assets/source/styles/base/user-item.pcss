@@ -1,0 +1,67 @@
+.user-item {
+	/* если несколько пунктов идут друг за другом над ними появляется отступ */
+	margin-top: 11px;
+	&:first-child {
+		margin-top:0px;
+	}
+	&__marker {
+		margin-bottom: 4px;
+		.marker {
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+	&__edit {
+		margin-left: 5px;
+		display: inline-block;
+		font-style:italic;
+		font-size: 12px;
+		color:#898989;
+		vertical-align: top;
+		.icon {
+			margin-right: 2px;
+		}
+	}
+	&__top {
+		width: 100%;
+		display: table;
+	}
+	&__top-text, &__check {
+		display: table-cell;
+		vertical-align: top;
+	}
+	&__title {
+		font-size: 13px;
+		font-weight: 500;
+	}
+	&__note {
+		font-size: 11px;
+		font-style: italic;
+		color:$grey-t;
+	}
+	&__link {
+		@mixin link;
+	    display: inline-block;
+	}
+	&__responsible {
+		color:$grey-t;
+		@mixin link;
+	}
+	&__description {
+		margin-top: 3px;
+		line-height: 17px;
+		font-size: 12px;
+	}
+	&__check {
+		width: 26px;
+	}
+	&__checkbox .checkbox__input + span {
+		width: 21px;
+		height: 21px;
+		margin-top: 4px;
+	}
+	&__checkbox .checkbox__input:checked + span:before {
+		width: 9px;
+		height: 9px;
+	}
+}

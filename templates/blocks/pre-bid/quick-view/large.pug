@@ -1,0 +1,458 @@
+.table-quick-view__size.table-quick-view__size_large
+  .table-quick-view__first-col.table-quick-view__first-col_large.scrollable(id="prebid_quickview_medium")
+    .table-quick-view__wrapper
+      .tabs
+        .tabs__wrapper.tabs__wrapper_fixed
+          a.tabs__tab.tabs__tab_active(href="#", data-tab="data") Данные
+          a.tabs__tab(href="#", data-tab="search") Поиск тура
+      .table-quick-view__tab.table-quick-view__tab_active(data-tab="data")
+        .table-quick-view__block.table-quick-view__block_grey
+          .title
+            .hover-menu.hover-menu_more.title__more
+              .hover-menu__menu
+                .hover-menu__menu-item
+                  a.pseudo Создать заявку
+                .hover-menu__menu-item
+                  a.pseudo Удалить предзаявку
+            a.pseudo(href="#").show_prebid_window Предзаявка №250-11 
+          .field-cols
+            .field-cols__col
+              .field-list
+                .field.field-list__item
+                  .field__name Статус:
+                  .field__value
+                    .select(data-placeholder="Выберите статус")
+                      select.select__default
+                        option(selected, disabled)
+                        option Первая опция
+                        option Вторая опция
+                        option Третья опция
+                .field.field-list__item
+                  .field__name Реклама:
+                  .field__value
+                    .select(data-placeholder="Выберите рекламу")
+                      select.select__default
+                        option(selected, disabled)
+                        option Первая опция
+                        option Вторая опция
+                        option Третья опция
+                label.field.field-list__item
+                  .field__name Офис:
+                  .field__value
+                    input.field__text-input(placeholder="Введите название офиса")
+                .field.field-list__item
+                  .field__name Вероятность:
+                  .field__value.field__value_progress
+                    .progress-bar
+                      .progress-bar__line(style={"width": "45%"})
+                      .progress-bar__base
+            .field-cols__col
+              .field-list
+                .field.field-list__item
+                  .field__name Клиент:
+                  .field__value
+                    .select(data-placeholder="Выберите клиента")
+                      select.select__default
+                        option(selected, disabled)
+                        option Первая опция
+                        option Вторая опция
+                        option Третья опция
+                .field.field-list__item
+                  .field__name Тип клиента:
+                  .field__value
+                    .select(data-placeholder="Выберите тип")
+                      select.select__default
+                        option(selected, disabled)
+                        option Первая опция
+                        option Вторая опция
+                        option Третья опция
+                label.field.field-list__item
+                  .field__name Телефон:
+                  .field__value
+                    input.field__text-input(placeholder="Номер телефона")
+                label.field.field-list__item
+                  .field__name Емайл:
+                  .field__value
+                    input.field__text-input(placeholder="Введите емайл")
+          .field-cols
+            .field-cols__col
+              .subtitle.subtitle_margin-top Куда и когда
+              .field-list
+                .field.field-list__item
+                  .field__name Куда:
+                  .field__value
+                    .select(data-placeholder="Выберите страну")
+                      select.select__default
+                        option(selected, disabled)
+                        option Первая опция
+                        option Вторая опция
+                        option Третья опция
+                label.field.field-list__item
+                  .field__name Когда:
+                  .field__value
+                    input.field__date-input(placeholder="Введите дату")
+                label.field.field-list__item
+                  .field__name Ночей:
+                  .field__value
+                    input.field__text-input(placeholder="Введите кол-во ночей")
+            .field-cols__col
+              .subtitle.subtitle_margin-top Кто едет
+              .field-list
+                .field.field-list__item
+                  .field__name Взрослых:
+                  .field__value
+                    .field__equal-cols
+                      .field__equal-col
+                        label.radio
+                          input(type="radio").radio__input
+                          span.desktop__type-checkbox
+                          div.radio__text 1
+                      .field__equal-col
+                        label.radio
+                          input(type="radio").radio__input
+                          span.desktop__type-checkbox
+                          div.radio__text 2
+                      .field__equal-col
+                        label.radio
+                          input(type="radio").radio__input
+                          span.desktop__type-checkbox
+                          div.radio__text 3
+                .field.field-list__item
+                  .field__name Детей до 12:
+                  .field__value
+                    .field__equal-cols
+                      .field__equal-col
+                        label.radio
+                          input(type="radio").radio__input
+                          span.desktop__type-checkbox
+                          div.radio__text 1
+                      .field__equal-col
+                        label.radio
+                          input(type="radio").radio__input
+                          span.desktop__type-checkbox
+                          div.radio__text 2
+                      .field__equal-col
+                        label.radio
+                          input(type="radio").radio__input
+                          span.desktop__type-checkbox
+                          div.radio__text 3
+                .field.field-list__item
+                  .field__name Детей до 2:
+                  .field__value
+                    .field__equal-cols
+                      .field__equal-col
+                        label.radio
+                          input(type="radio").radio__input
+                          span.desktop__type-checkbox
+                          div.radio__text 1
+                      .field__equal-col
+                        label.radio
+                          input(type="radio").radio__input
+                          span.desktop__type-checkbox
+                          div.radio__text 2
+                      .field__equal-col
+                        label.radio
+                          input(type="radio").radio__input
+                          span.desktop__type-checkbox
+                          div.radio__text 3
+          .subtitle.subtitle_margin-top Отель
+          .field-list
+            .field.field-list__item
+              .field__name Категория:
+              .field__value
+                .field__equal-cols
+                  .field__equal-col
+                    label.checkbox
+                      input(type="checkbox").checkbox__input
+                      span.desktop__type-checkbox
+                      div.checkbox__text 2
+                  .field__equal-col
+                    label.checkbox
+                      input(type="checkbox").checkbox__input
+                      span.desktop__type-checkbox
+                      div.checkbox__text 3
+                  .field__equal-col
+                    label.checkbox
+                      input(type="checkbox").checkbox__input
+                      span.desktop__type-checkbox
+                      div.checkbox__text 4
+                  .field__equal-col
+                    label.checkbox
+                      input(type="checkbox").checkbox__input
+                      span.desktop__type-checkbox
+                      div.checkbox__text 5
+                  .field__equal-col
+                    label.checkbox
+                      input(type="checkbox").checkbox__input
+                      span.desktop__type-checkbox
+                      div.checkbox__text Apts
+                  .field__equal-col
+                    label.checkbox
+                      input(type="checkbox").checkbox__input
+                      span.desktop__type-checkbox
+                      div.checkbox__text Villas
+                  .field__equal-col
+                    label.checkbox
+                      input(type="checkbox").checkbox__input
+                      span.desktop__type-checkbox
+                      div.checkbox__text HV-1
+                  .field__equal-col
+                    label.checkbox
+                      input(type="checkbox").checkbox__input
+                      span.desktop__type-checkbox
+                      div.checkbox__text HV-2
+            .field.field-list__item
+              .field__name Питание:
+              .field__value
+                .field__equal-cols
+                  .field__equal-col
+                    label.checkbox
+                      input(type="checkbox").checkbox__input
+                      span.desktop__type-checkbox
+                      div.checkbox__text AI
+                  .field__equal-col
+                    label.checkbox
+                      input(type="checkbox").checkbox__input
+                      span.desktop__type-checkbox
+                      div.checkbox__text BB
+                  .field__equal-col
+                    label.checkbox
+                      input(type="checkbox").checkbox__input
+                      span.desktop__type-checkbox
+                      div.checkbox__text FB
+                  .field__equal-col
+                    label.checkbox
+                      input(type="checkbox").checkbox__input
+                      span.desktop__type-checkbox
+                      div.checkbox__text FB+
+                  .field__equal-col
+                    label.checkbox
+                      input(type="checkbox").checkbox__input
+                      span.desktop__type-checkbox
+                      div.checkbox__text HB
+                  .field__equal-col
+                    label.checkbox
+                      input(type="checkbox").checkbox__input
+                      span.desktop__type-checkbox
+                      div.checkbox__text HB+
+                  .field__equal-col
+                    label.checkbox
+                      input(type="checkbox").checkbox__input
+                      span.desktop__type-checkbox
+                      div.checkbox__text RO
+                  .field__equal-col
+                    label.checkbox
+                      input(type="checkbox").checkbox__input
+                      span.desktop__type-checkbox
+                      div.checkbox__text UAI
+            .field.field-list__item
+              .field__name Линия отеля:
+              .field__value
+                .field__equal-cols
+                  .field__equal-col
+                    label.checkbox
+                      input(type="checkbox").checkbox__input
+                      span.desktop__type-checkbox
+                      div.checkbox__text 1
+                  .field__equal-col
+                    label.checkbox
+                      input(type="checkbox").checkbox__input
+                      span.desktop__type-checkbox
+                      div.checkbox__text 2
+                  .field__equal-col
+                    label.checkbox
+                      input(type="checkbox").checkbox__input
+                      span.desktop__type-checkbox
+                      div.checkbox__text 3
+                  .field__equal-col
+                  .field__equal-col
+                  .field__equal-col
+                  .field__equal-col
+                  .field__equal-col
+            label.field.field-list__item
+              .field__name Цена до:
+              .field__value
+                input.field__text-input(placeholder="0 руб.")
+            label.field.field-list__item
+              .field__name Примечание:
+              .field__value
+                textarea.field__textarea(placeholder="Если нужно, введите примечание")
+          div
+            span.marked.marked_margin-top.marked_hint
+              | Заполните 
+              span.marked__green «Дата заезда» 
+              | для поиска туров
+          .title.title_margin-top Подбор туров
+          .plain-table
+            .plain-table__thead
+              .plain-table__row
+                .plain-table__col(style={"width":"115px"}) Дата создания
+                .plain-table__col(style={"width":"70px"}) Номер
+                .plain-table__col(style={"width":"60px"}) Клики
+                .plain-table__col Клиент
+                .plain-table__col Менеджер
+                .plain-table__col(style={"width":"70px"}) Просм.
+                .plain-table__col(style={"width":"70px"}) Печать
+                .plain-table__col(style={"width":"70px"}) Отпр.
+                .plain-table__col(style={"width":"110px"}) Отложено
+            .plain-table__tbody
+              .plain-table__row
+                .plain-table__col 20.01.2016 20:15
+                .plain-table__col ACHY
+                .plain-table__col 
+                  a.icon.icon__graph(href="#")
+                .plain-table__col Александр
+                .plain-table__col Алексей
+                .plain-table__col 2
+                .plain-table__col 3
+                .plain-table__col
+                  a.icon.icon__mail.icon_margin-right(href="#")
+                  a.icon.icon__phone(href="#")
+                .plain-table__col Нет
+              .plain-table__row
+                .plain-table__col 20.01.2016 20:15
+                .plain-table__col ACHY
+                .plain-table__col 
+                  a.icon.icon__graph(href="#")
+                .plain-table__col Александр
+                .plain-table__col Алексей
+                .plain-table__col 2
+                .plain-table__col 3
+                .plain-table__col
+                  a.icon.icon__mail.icon_margin-right(href="#")
+                  a.icon.icon__phone(href="#")
+                .plain-table__col Нет
+              .plain-table__row
+                .plain-table__col 20.01.2016 20:15
+                .plain-table__col ACHY
+                .plain-table__col 
+                  a.icon.icon__graph(href="#")
+                .plain-table__col Александр
+                .plain-table__col Алексей
+                .plain-table__col 2
+                .plain-table__col 3
+                .plain-table__col
+                  a.icon.icon__mail.icon_margin-right(href="#")
+                  a.icon.icon__phone(href="#")
+                .plain-table__col Нет
+              .plain-table__row
+                .plain-table__col 20.01.2016 20:15
+                .plain-table__col ACHY
+                .plain-table__col 
+                  a.icon.icon__graph(href="#")
+                .plain-table__col Александр
+                .plain-table__col Алексей
+                .plain-table__col 2
+                .plain-table__col 3
+                .plain-table__col
+                  a.icon.icon__mail.icon_margin-right(href="#")
+                  a.icon.icon__phone(href="#")
+                .plain-table__col Нет
+              .plain-table__row
+                .plain-table__col 20.01.2016 20:15
+                .plain-table__col ACHY
+                .plain-table__col 
+                  a.icon.icon__graph(href="#")
+                .plain-table__col Александр
+                .plain-table__col Алексей
+                .plain-table__col 2
+                .plain-table__col 3
+                .plain-table__col
+                  a.icon.icon__mail.icon_margin-right(href="#")
+                  a.icon.icon__phone(href="#")
+                .plain-table__col Нет
+      .table-quick-view__tab(data-tab="search")
+  .table-quick-view__second-col.table-quick-view__second-col_large.scrollable
+    .table-quick-view__wrapper
+      .table-quick-view__block
+        .subtitle Статистика предзаявок
+        .num-stats
+          .num-stats__col
+            .num-stats__text Активно:
+            .num-stats__num 10
+          .num-stats__col
+            .num-stats__text Закрыто:
+            .num-stats__num 50
+          .num-stats__col
+            .num-stats__text Просрочено:
+            .num-stats__num 4
+        .data-list.data-list_margin-top
+          .data-list__row
+            .data-list__name
+              span.data-list__span Всего задач
+            .data-list__value 8
+          .data-list__row
+            .data-list__name
+              span.data-list__span Кол-во подборок:
+            .data-list__value 20
+          .data-list__row
+            .data-list__name
+              span.data-list__span Предложено:
+            .data-list__value 15 туров
+          .data-list__row
+            .data-list__name
+              span.data-list__span Первый контакт:
+            .data-list__value Через 2 дня
+          .data-list__row
+            .data-list__name
+              span.data-list__span В работе:
+            .data-list__value 20 дней
+        .subtitle.subtitle_margin-top Работа с клиентом
+        .text.text_small.text_grey Создана 10 задач, 4 общения за 10 дней 
+        | Активность по предварительной заявке: 
+        span.marked хорошая
+        .table-quick-view__quick-creation
+          include ../../../blocks/quick-creation/base
+        .divided-list.divided-list_without-last
+          .divided-list__item
+            .user-item
+              .user-item__marker
+                .marker.marker_task задача
+              .user-item__top
+                .user-item__top-text
+                  .user-item__title Позвонить 10 августа в 17:00
+                  .user-item__note 
+                    | Средний приоритет, ответственный 
+                    a(href="#").user-item__responsible Алексей
+                .user-item__check
+                  label.checkbox.user-item__checkbox
+                    input(type="checkbox").checkbox__input
+                    span
+              .user-item__description Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил
+          .divided-list__item
+            .user-item
+              .user-item__marker
+                .marker.marker_conversation общение
+              .user-item__top
+                .user-item__top-text
+                  .user-item__title Позвонить 10 августа в 17:00
+                  .user-item__note 
+                    | Средний приоритет, ответственный 
+                    a(href="#").user-item__responsible Алексей
+              .user-item__description Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил
+          .divided-list__item
+            .user-item
+              .user-item__marker
+                .marker.marker_task задача
+              .user-item__top
+                .user-item__top-text
+                  .user-item__title Позвонить 10 августа в 17:00
+                  .user-item__note 
+                    | Средний приоритет, ответственный 
+                    a(href="#").user-item__responsible Алексей
+                .user-item__check
+                  label.checkbox.user-item__checkbox
+                    input(type="checkbox").checkbox__input
+                    span
+              .user-item__description Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил
+          .divided-list__item
+            .user-item
+              .user-item__marker
+                .marker.marker_conversation общение
+              .user-item__top
+                .user-item__top-text
+                  .user-item__title Позвонить 10 августа в 17:00
+                  .user-item__note 
+                    | Средний приоритет, ответственный 
+                    a(href="#").user-item__responsible Алексей
+              .user-item__description Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил

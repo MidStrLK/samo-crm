@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>plus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Навигация" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="поиск:в-процессе" transform="translate(-446.000000, -133.000000)" fill="#000000">
+            <g id="search" transform="translate(64.000000, 6.000000)">
+                <g id="1" transform="translate(30.000000, 108.000000)">
+                    <path d="M361,23 L358,23 L358,20 C358,19.4 357.6,19 357,19 C356.4,19 356,19.4 356,20 L356,23 L353,23 C352.4,23 352,23.4 352,24 C352,24.6 352.4,25 353,25 L356,25 L356,28 C356,28.6 356.4,29 357,29 C357.6,29 358,28.6 358,28 L358,25 L361,25 C361.6,25 362,24.6 362,24 C362,23.4 361.6,23 361,23 L361,23 Z" id="plus"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

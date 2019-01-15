@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>nav_arrow_back</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Предзаявки" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="предзаявки:окно" transform="translate(-16.000000, -29.000000)" fill="#FFFFFF">
+            <g id="content" transform="translate(16.000000, 6.000000)">
+                <path d="M0,29 C0,28.7 0.1,28.5 0.3,28.3 L5.3,23.3 C5.7,22.9 6.3,22.9 6.7,23.3 C7.1,23.7 7.1,24.3 6.7,24.7 L2.4,29 L6.7,33.3 C7.1,33.7 7.1,34.3 6.7,34.7 C6.3,35.1 5.7,35.1 5.3,34.7 L0.3,29.7 C0.1,29.5 0,29.3 0,29 L0,29 Z" id="nav_arrow_back"></path>
+            </g>
+        </g>
+    </g>
+</svg>

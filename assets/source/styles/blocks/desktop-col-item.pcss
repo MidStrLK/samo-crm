@@ -1,0 +1,23 @@
+.desktop-col-item {
+	margin-bottom: 9px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&__title {
+		font-size: 13px;
+		@mixin link;
+	}
+	&__note {
+		margin-top: 1px;
+		font-size: 11px;
+		color:$grey-t;
+		a {
+			@mixin link;
+			color:$grey-t;
+		}
+	}
+	&__description {
+		margin-top:4px;
+		font-size: 11px;
+	}
+}

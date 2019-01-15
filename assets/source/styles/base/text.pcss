@@ -1,0 +1,157 @@
+.title {
+	font-size: 17px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	display: block;
+	&_margin-top {
+		margin-top: 26px;
+	}
+	&__more {
+		float:right;
+		position: relative;
+		right:-4px;
+	}
+}
+
+.subtitle {
+	margin-bottom: 11px;
+	font-size: 14px;
+	font-weight: 500;
+	&_margin-top {
+		margin-top: 18px;
+	}
+	&__more {
+		float:right;
+		position: relative;
+		top:-3px;
+		right:-4px;
+	}
+}
+
+.link {
+	@mixin link;
+}
+
+.pseudo {
+	@mixin pseudo;
+	cursor: pointer;
+	&_orange {
+		color:#C47C04;
+		@mixin dashed-underline #F8CE89;
+		&:hover {
+			color:#A66A07;
+			@mixin dashed-underline #DBB473;
+		}
+	}
+	&_red {
+		color:#AD4040;
+		@mixin dashed-underline #DAA8A8;
+		&:hover {
+			color:#922C2C;
+			@mixin dashed-underline #BB8383;
+		}
+	}
+	&_grey {
+		color:#898989;
+		@mixin dashed-underline #D8D8D8;
+	}
+}
+
+.text {
+/* 	a {
+		color:$grey-t;
+	} */
+	&_grey {
+		color:$grey-t;
+	}
+	&_blue {
+		color:#4B73BF;
+	}
+	&_green {
+		color:#1B694C;
+	}
+	&_red {
+		color:#AD4040;
+	}
+	&_medium {
+		font-size: 12px;
+	}
+	&_small {
+		font-size: 11px;
+	}
+	&_italic {
+		font-style: italic;
+	}
+}
+
+.marked {
+	padding:1px 3px 2px;
+	background-color: $yellow;
+	font-size: 12px;
+	color:#44402D;
+	border-radius: 2px;
+	display: inline-block;
+	&_margin-top {
+		margin-top: 12px;
+	}
+	&_hint {
+		padding:3px 5px 4px;
+	}
+	&_hint:before {
+		content:"";
+		width: 10px;
+		height: 13px;
+		margin-right: 5px;
+		background:svg-load("../img/svg/hint.svg", fill:#C2B67D) no-repeat center;
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		top:1px;
+	}
+	&__green {
+		color:$green-t;
+		font-weight: 500;
+	}
+}
+
+.icon-link {
+	&:before {
+		content:"";
+		margin-right: 4px;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: inline-block;
+		vertical-align: top;
+	}
+	&_erase:before {
+		width: 14px;
+		height: 14px;
+		position: relative;
+		bottom:-2px;
+		background-image:svg-load("../img/svg/erase.svg", fill:#000);
+	}
+	&__span {
+		@mixin underline #D8D8D8;
+		padding-bottom: 1px;
+	}
+	&:hover {
+		cursor: pointer;
+		&.icon-link_erase:before {
+			background-image:svg-load("../img/svg/erase.svg", fill:$green-t);		
+		}
+		.icon-link__span {
+			color:$green-t;
+			@mixin underline #C2E0D5;
+		}
+	}
+	&_pseudo {
+		.icon-link__span {
+			@mixin dashed-underline #D8D8D8;
+		}
+		&:hover {
+			.icon-link__span {
+				@mixin dashed-underline #C2E0D5;		
+			}
+		}
+	}
+}

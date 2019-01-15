@@ -1,0 +1,67 @@
+@define-mixin underline $color, $position: 100% {
+  background-image: linear-gradient(45deg, $color, $color);
+  background-position: 0 $position;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+}
+
+@define-mixin dashed-underline $color, $position: 100% {
+  background-image: linear-gradient(45deg, $color 55%, transparent 55%);
+  background-position: 0 $position;
+  background-repeat: repeat-x;
+  background-size: 5px 1px;
+}
+
+@define-mixin link {
+  @mixin underline #D8D8D8;
+  display: inline;
+  padding-bottom: 1px;
+  &:hover {
+    color:$green-t;
+    @mixin underline #C2E0D5;
+  }
+}
+
+@define-mixin pseudo {
+  @mixin dashed-underline #D8D8D8;
+  display: inline;
+  padding-bottom: 1px;
+  &:hover {
+    color:$green-t;
+    @mixin dashed-underline #C2E0D5;
+  }
+}
+
+@define-mixin placeholder $color {
+  &::-webkit-input-placeholder {
+    color:$color;
+  }
+  ::-moz-placeholder {
+    color:$color;
+  }
+  :-ms-input-placeholder {
+    color:$color;
+  }
+  :-moz-placeholder {
+    color:$color;
+  }
+}
+
+@define-mixin crop {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@define-mixin hide $duration: 0.3s {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity $duration ease;
+}
+
+@define-mixin show {
+  height: auto;
+  overflow: visible; 
+  opacity: 1;
+}

@@ -1,0 +1,17 @@
+.quick-creation.quick-creation_double-form
+  .quick-creation__header
+    .quick-creation__header-left
+      a.quick-creation__tab.quick-creation__tab_active(href="#", data-tab="conversation") Общение
+      a.quick-creation__tab(href="#", data-tab="task") Задача
+    .quick-creation__header-right
+      label.quick-creation__type.quick-creation__type_1.quick-creation__type_active(href="#")
+        input(type="radio", name="type", checked)
+        span
+      label.quick-creation__type.quick-creation__type_2(href="#")
+        input(type="radio", name="type")
+        span
+      label.quick-creation__type.quick-creation__type_3(href="#")
+        input(type="radio", name="type")
+        span
+  include ./conversation
+  include ./task

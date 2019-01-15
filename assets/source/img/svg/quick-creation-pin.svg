@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>quick-creation-pin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="общение/создание" transform="translate(-18.000000, -159.000000)" fill="#000000">
+            <g id="create_task">
+                <g id="create_task:open" transform="translate(18.000000, 14.000000)">
+                    <g id="Group" transform="translate(0.000000, 71.000000)">
+                        <path d="M15.7,88.3 L11.9,84.5 L14.6,81.8 C15.2,81.2 15.3,80.4 15,79.6 C14.7,78.8 13.8,78.3 12.9,78.4 L9.4,78.9 L6,75.6 C6.3,75.2 6.3,74.6 5.9,74.3 C5.8,74.1 5.5,74 5.2,74 C4.9,74 4.7,74.1 4.5,74.3 L0.3,78.5 C-0.1,78.9 -0.1,79.5 0.3,79.9 C0.5,80.1 0.7,80.2 1,80.2 C1.2,80.2 1.4,80.1 1.6,80 L4.9,83.3 L4.4,86.8 C4.3,87.4 4.5,87.9 4.9,88.4 C5.3,88.8 5.8,89.1 6.4,89.1 C6.9,89.1 7.4,88.9 7.8,88.5 L10.5,85.8 L14.3,89.6 C14.5,89.8 14.8,89.9 15,89.9 C15.2,89.9 15.5,89.8 15.7,89.6 C16.1,89.3 16.1,88.7 15.7,88.3 L15.7,88.3 Z M5,77.4 L7.6,80 L6,81.6 L3.4,79 L5,77.4 L5,77.4 Z M6.4,87.2 L6.9,83.5 L8.2,82.2 L9.5,80.9 L13.2,80.4 L6.4,87.2 L6.4,87.2 Z" id="quick-creation-pin"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

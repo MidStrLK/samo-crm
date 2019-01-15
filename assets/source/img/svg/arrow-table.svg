@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="9px" viewBox="0 0 6 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Предзаявки" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="предзаявки:выбрана-правая-часть" transform="translate(-1212.000000, -187.000000)" fill="#B7B7B7">
+            <path d="M1217.025,192.025 L1213.275,195.775 C1212.975,196.075 1212.525,196.075 1212.225,195.775 C1211.925,195.475 1211.925,195.025 1212.225,194.725 L1215.45,191.5 L1212.225,188.275 C1211.925,187.975 1211.925,187.525 1212.225,187.225 C1212.525,186.925 1212.975,186.925 1213.275,187.225 L1217.025,190.975 C1217.175,191.125 1217.25,191.275 1217.25,191.5 C1217.25,191.725 1217.175,191.875 1217.025,192.025 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

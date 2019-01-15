@@ -1,0 +1,163 @@
+.modal.scrollable.modal_kanban-quickview(data-modal="prebid-kanban-quickview")
+  .table-quick-view__block
+    .text.text_small.text_grey Создана 10 задач, 4 общения за 10 дней 
+    | Активность по предварительной заявке: 
+    span.marked хорошая
+    .table-quick-view__quick-creation
+      include ../blocks/quick-creation/base
+    .divided-list
+      .divided-list__item
+        .user-item
+          .user-item__marker
+            .marker.marker_task задача
+          .user-item__top
+            .user-item__top-text
+              .user-item__title Позвонить 10 августа в 17:00
+              .user-item__note 
+                | Средний приоритет, ответственный 
+                a(href="#").user-item__responsible Алексей
+            .user-item__check
+              label.checkbox.user-item__checkbox
+                input(type="checkbox").checkbox__input
+                span
+          .user-item__description Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил
+      .divided-list__item
+        .user-item
+          .user-item__marker
+            .marker.marker_conversation общение
+          .user-item__top
+            .user-item__top-text
+              .user-item__title Позвонить 10 августа в 17:00
+              .user-item__note 
+                | Средний приоритет, ответственный 
+                a(href="#").user-item__responsible Алексей
+          .user-item__description Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил
+    .num-stats.table-quick-view__num-stats
+      .num-stats__col
+        .num-stats__text Первый контакт через:
+        .num-stats__num 2 дня
+      .num-stats__col
+        .num-stats__text В работе:
+        .num-stats__num 20 дней
+  .table-quick-view__block.table-quick-view__block_grey
+    .title
+      a.pseudo(href="#").show_prebid_window Предзаявка №250-11
+    .field-list
+      .field.field-list__item
+        .field__name Статус:
+        .field__value
+          .select(data-placeholder="Выберите статус")
+            select.select__default
+              option(selected, disabled)
+              option Первая опция
+              option Вторая опция
+              option Третья опция
+      .field.field-list__item
+        .field__name Реклама:
+        .field__value
+          .select(data-placeholder="Выберите рекламу")
+            select.select__default
+              option(selected, disabled)
+              option Первая опция
+              option Вторая опция
+              option Третья опция
+      .field.field-list__item
+        .field__name Вероятность:
+        .field__value.field__value_progress
+          .progress-bar
+            .progress-bar__line(style={"width": "45%"})
+            .progress-bar__base
+    .subtitle.subtitle_margin-top Клиент
+    .field-list
+      .field.field-list__item
+        .field__name Клиент:
+        .field__value
+          .select(data-placeholder="Выберите клиента")
+            select.select__default
+              option(selected, disabled)
+              option Первая опция
+              option Вторая опция
+              option Третья опция
+      .field.field-list__item
+        .field__name Тип клиента:
+        .field__value
+          .select(data-placeholder="Выберите тип")
+            select.select__default
+              option(selected, disabled)
+              option Первая опция
+              option Вторая опция
+              option Третья опция
+    .subtitle.subtitle_margin-top Пожелания
+    .field-list
+      .field.field-list__item
+        .field__name Страна:
+        .field__value
+          .select(data-placeholder="Выберите страну")
+            select.select__default
+              option(selected, disabled)
+              option Первая опция
+              option Вторая опция
+              option Третья опция
+      .field.field-list__item
+        .field__name Курорт:
+        .field__value
+          .select(data-placeholder="Выберите курорт")
+            select.select__default
+              option(selected, disabled)
+              option Первая опция
+              option Вторая опция
+              option Третья опция
+      label.field.field-list__item
+        .field__name Дата вылета:
+        .field__value
+          input.field__date-input(placeholder="Введите дату")
+      label.field.field-list__item
+        .field__name Цена до:
+        .field__value
+          input.field__text-input(placeholder="0 руб.")
+      label.field.field-list__item
+        .field__name Примечание:
+        .field__value
+          textarea.field__textarea(placeholder="Если нужно, введите примечание")
+    .num-stats.table-quick-view__num-stats
+      .num-stats__col
+        .num-stats__text Кол-во подборок:
+        .num-stats__num 15
+      .num-stats__col
+        .num-stats__text Туров предложено:
+        .num-stats__num 5
+  .table-quick-view__block.table-quick-view__block_without-padding
+    .tabs
+      .tabs__wrapper
+        a.tabs__tab.tabs__tab_active(href="#") Рабочий стол
+        a.tabs__tab(href="#") Статистика
+    .table-quick-view__block-with-tabs
+      .table-quick-view__quick-creation
+        include ../blocks/quick-creation/base
+      .divided-list
+        .divided-list__item
+          .user-item
+            .user-item__marker
+              .marker.marker_task задача
+            .user-item__top
+              .user-item__top-text
+                .user-item__title Позвонить 10 августа в 17:00
+                .user-item__note 
+                  | Средний приоритет, ответственный 
+                  a(href="#").user-item__responsible Алексей
+              .user-item__check
+                label.checkbox.user-item__checkbox
+                  input(type="checkbox").checkbox__input
+                  span
+            .user-item__description Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил
+        .divided-list__item
+          .user-item
+            .user-item__marker
+              .marker.marker_conversation общение
+            .user-item__top
+              .user-item__top-text
+                .user-item__title Позвонить 10 августа в 17:00
+                .user-item__note 
+                  | Средний приоритет, ответственный 
+                  a(href="#").user-item__responsible Алексей
+            .user-item__description Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил

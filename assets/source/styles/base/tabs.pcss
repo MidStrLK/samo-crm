@@ -1,0 +1,39 @@
+.tabs {
+	padding:0 26px;
+	border-bottom:1px solid $border;
+	&_without-border {
+		border-bottom:none;
+	}
+	&__wrapper {
+		width: 100%;
+		display: table;
+		table-layout: fixed;
+		&_fixed {
+			table-layout: initial;
+			.tabs__tab {
+				padding:15px 22px 0;
+				display: block;
+				float:left;
+			}
+		}
+	}
+	&__tab {
+		height: 45px;
+		text-align: center;
+		display: table-cell;
+		vertical-align: middle;
+		position: relative;
+		&_active {
+			color:$green-t;
+			&:before {
+				content:"";
+				height: 2px;
+				background-color: $green;
+				position: absolute;
+				left:0px;
+				right:0px;
+				bottom:-1px;
+			}
+		}
+	}
+}

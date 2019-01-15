@@ -1,0 +1,136 @@
+.header {
+	&__top {
+		width: 100%;
+		border-bottom:1px solid $border;
+		display: table;
+	}
+	&__field, &__add, &__view {
+		height: 66px;
+		display: table-cell;
+		vertical-align: top;
+	}
+	&__field {
+		padding:24px 24px 0;
+	}
+	&__view {
+		width: 1px;
+		padding:0 18px;
+		border-left: 1px solid $border;
+	}
+	&__view-wrapper {
+		display: table;
+	}
+	&__view-item {
+		width: 36px;
+		min-width: 36px;
+		height: 66px;
+		display: table-cell;
+		vertical-align: middle;
+		background-repeat: no-repeat;
+		background-position: center;
+		position: relative;
+		&:hover {
+			cursor: pointer;
+		}
+		&_active {
+			span {
+				background-color: #4FAB89;
+			}
+			&:before {
+				height: 3px;
+				background-color:$green;
+				bottom: -1px;
+				left: 0px;
+				right: 0px;
+				position: absolute;
+				display: block;
+				content:"";				
+			}
+		}		
+	}
+	&__view-1, &__view-2, &__view-3 {
+		width: 19px;
+		height: 17px;
+		margin:0px auto;
+		background-color: #000000;
+		display: block;
+	}
+	&__view-1 {
+		background-image:svg-load("../img/svg/view_1.svg", fill: #fff);
+	}
+	&__view-2 {
+		background-image:svg-load("../img/svg/view_2.svg", fill: #fff);
+	}
+	&__view-3 {
+		background-image:svg-load("../img/svg/view_3.svg", fill: #fff);
+	}
+/* 	&__view-item-1, &__view-item-2, &__view-item-3 {
+		width: 36px;
+		min-width: 36px;
+		height: 66px;
+		display: table-cell;
+		vertical-align: middle;
+		background-repeat: no-repeat;
+		background-position: center;
+		position: relative;
+		&_active:before {
+			height: 3px;
+			background-color:$green;
+			bottom: -1px;
+			left: 0px;
+			right: 0px;
+			position: absolute;
+			display: block;
+			content:"";
+		}
+	}
+	&__view-item-1 {
+		background-image: svg-load('../img/svg/view_1.svg', fill: #000);
+		&_active {
+			background-image: svg-load('../img/svg/view_1.svg', fill: $green);
+		}
+	}
+	&__view-item-2 {
+		background-image: svg-load('../img/svg/view_2.svg', fill: #000);
+		&_active {
+			background-image: svg-load('../img/svg/view_2.svg', fill: $green);
+		}
+	}
+	&__view-item-3 {
+		background-image: svg-load('../img/svg/view_3.svg', fill: #000);
+		&_active {
+			background-image: svg-load('../img/svg/view_3.svg', fill: $green);
+		}
+	} */
+	&__add {
+		width: 220px;
+		padding:11px 15px 0;
+		border-left: 1px solid $border;
+	}
+	&__button {
+		width: 100%;
+	}
+	&__bottom {
+		width: 100%;
+		background-color: $grey;
+		border-bottom:1px solid $border;
+		overflow: hidden;
+	}
+	&__bottom-wrapper {
+		padding:8px 10px 1px;
+		user-select:none;
+	}
+	&__toggle {
+		width: 120px;
+		float:left;
+	}
+	&__divider {
+		width: 15px;
+		height: 38px;
+		background:svg-load("../img/svg/splitter.svg", fill:#D4D4D4) no-repeat center;
+		float:left;
+	}
+	&__quick-filters {
+	    margin-left: 135px;
+	}
+}

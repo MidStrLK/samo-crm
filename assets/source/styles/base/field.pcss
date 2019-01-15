@@ -1,0 +1,96 @@
+.field {
+	width: 100%;
+	border-bottom: 1px solid $border;
+	border-top:1px solid $border;
+	display: table;
+	&__name {
+		width: 125px;
+	    max-width: 125px;
+	    padding:10px 13px 0 0;
+		color:#898989;
+		display: table-cell;
+		vertical-align: top;
+		@mixin crop;
+	}
+	&__value {
+		display: table-cell;
+		vertical-align: top;
+		&_progress {
+			height: 36px;
+			padding-top: 1px;
+			vertical-align: middle;
+		}
+	}
+	&__text-input {
+		width: 100%;
+		height: 36px;
+		font-size: 13px;
+		color:#000;
+		background-color: transparent;
+		@mixin placeholder #898989;
+		&_right-padding {
+			padding-right:10px;
+		}
+	}
+	&__date-input {
+		width: 100%;
+		height: 36px;
+		padding-right: 23px;
+		background:svg-load("../img/svg/date-input.svg", fill:#000) no-repeat right center;
+		font-size: 13px;
+		color:#000;
+		@mixin placeholder #898989;
+	}
+	&__col-two {
+		width: 100%;
+		display: table;
+	}
+	&__col {
+		width: calc(50% - 13px);
+		display: table-cell;
+		vertical-align: top;
+	}
+	&__col-separator {
+		width: 26px;
+		color:$grey-t;
+		text-align: center;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	&__currency {
+		width: 100%;
+		display: table;
+	}
+	&__currency-input-col {
+		width: 100%;
+		display: table-cell;
+		vertical-align: middle;;
+	}
+	&__currency-type {
+		color:#000;
+		display: table-cell;
+		vertical-align: middle;;
+	}
+	&__textarea {
+		width: 100%;
+		height: 80px;
+		padding: 10px 0;
+		font-size: 13px;
+		background-color: transparent;
+	}
+	&__equal-cols {
+		width: 100%;
+		display: table;
+		table-layout: fixed;
+	}
+	&__equal-col {
+		height: 36px;
+		padding-top: 1px;
+		display: table-cell;
+		vertical-align: middle;
+		.checkbox {
+			@mixin crop;
+			padding-right: 30px;
+		}
+	}
+}

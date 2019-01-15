@@ -1,0 +1,239 @@
+.main-table {
+	width: 100%;
+	border-collapse:collapse;
+	position: absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	&_linear {
+		.main-table__thead-item {
+			display: none;
+			border:0px;
+		}
+		.main-table__thead-row {
+			width: 100%;
+			display: table;
+			border-bottom: 1px solid #EBEBEB;
+		}
+		.main-table__thead-item:first-child, .main-table__thead-item:last-child {
+			height: 33px;
+			padding-top:6px;
+			display: block;
+			float:left;
+		}
+		.main-table__tbody-row {
+			width: 100%;
+			padding:4px 0 16px;
+	    border-bottom: 1px solid #EBEBEB;
+			display: block;
+			position: relative;
+			.main-table__check {
+				padding-top: 4px;
+			}
+			&_active {
+		    border-color: #BFE2D5;
+		    .main-table__tbody-item:after {
+					display: none;
+		    }
+			}
+		}
+		.main-table__tbody-item {
+			width: auto;
+			max-width: none;
+			margin: 0px 23px 0 45px;
+	    padding: 9px 0px 0px 0;
+			display: block;
+			border-bottom:0px;
+		}
+		.main-table__tbody-item:first-child {
+			width: 45px;
+			margin: 0px;
+			padding-top: 5px;
+			float:left;
+		}
+		.main-table__tbody-item:last-child {
+			width: 23px;
+			margin: 0px;
+			position: absolute;
+			top:50%;
+			right:0px;
+			transform: translate(0, -50%);
+		}
+		.main-table__selected-overlay {
+			height: 64px;
+			bottom:-64px;
+			&_active {
+				bottom:0px;
+			}
+		}
+		.main-table__selected-text {
+			padding-bottom: 4px;
+			display: block;
+		}
+		.main-table__tbody-item_hide {
+			display: none;
+		}
+	}
+	&__thead {
+		width: 100%;
+		height: 34px;
+		font-size: 12px;
+		color:$grey-t;
+		display: table;
+	}
+	&__thead-row {
+		display: table-row;
+	}
+	&__thead-item {
+		max-width:0px;
+		padding:1px 28px 0 0;
+		display: table-cell;
+		vertical-align: middle;
+		border-bottom:1px solid $border;
+		&_hide {
+			display: none;
+		}
+	}
+	&__check {
+		margin-left:10px;
+	}
+	&__tbody {
+		transition: bottom 0.3s ease;
+		position: absolute;
+		top:34px;
+		right:0;
+		bottom:0;
+		left:0;
+		&_selected-overlay {
+			bottom:44px;
+		}
+	}
+	&__tbody-wrapper {
+		width: 100%;
+		display: table;
+	}
+	&__tbody-colgroup {
+		display: table-column-group;
+	}
+	&__tbody-col {
+		display: table-column;
+		&_hide {
+			display: none;
+		}
+	}
+	&__tbody-row {
+		display: table-row;
+		&:hover {
+			background-color: $grey;
+			cursor: pointer;
+		}
+		&_active {
+			background-color: #EBF3F0;
+			&:hover {
+				background-color: #e3efea;
+			}
+			.main-table__tbody-item {
+				border-color:#BFE2D5;
+				position: relative;
+				&:after {
+					content:"";
+					height: 1px;
+					background-color: #BFE2D5;
+					display: block;
+					position: absolute;
+					top:-1px;
+					right:0;
+					left:0;
+				}
+			}
+			.progress-bar__base {
+				border-color:#d2e0db;
+			}
+			.main-table__arrow:before {
+				background-image: svg-load('../img/svg/arrow-table.svg', fill=$green);
+			}
+		}
+	}
+	&__tbody-item {
+		max-width:0px;
+		padding:13px 28px 13px 0;
+		border-bottom: 1px solid $border;
+		vertical-align: top;
+		display: table-cell;
+		.main-table__check {
+			margin-top:-3px;
+		}
+		&_hide {
+			display: none;
+		}
+	}
+	&__text {
+		font-size: 12px;
+		@mixin crop;
+		a {
+			@mixin link;
+		}
+	}
+	&__note {
+		font-size: 11px;
+		color:$grey-t;
+		@mixin crop;
+	}
+	&__progress {
+		padding:4px 0 3px;
+	}
+	&__arrow {
+		width: 23px;
+		padding-right:8px;
+		vertical-align: middle;
+		text-align: center;
+		&:before {
+			content:"";
+			width: 6px;
+			height: 9px;
+			background: svg-load('../img/svg/arrow-table.svg', fill=$grey-i) no-repeat center;
+			display: inline-block;
+		}
+	}
+	&__settings {
+		width: 23px;
+	}
+	&__set-sequence {
+		top:9px;
+		right:6px;
+	}
+	&__selected-overlay {
+		height: 44px;
+		padding: 16px 18px 0;
+		font-size: 12px;
+		background-color: $yellow;
+		transition:bottom 0.3s ease;
+		position: absolute;
+		right:0px;
+		bottom:-44px;
+		left:0px;
+		z-index: 1;
+		&_small {
+			height: 64px;
+			bottom:-64px;
+			.main-table__selected-text {
+				padding-bottom: 4px;
+				display: block;
+			}
+		}
+		&_active {
+			bottom:0px;
+		}
+	}
+	&__selected-count {
+		margin-right: 19px;
+	}
+	&__selected-link {
+		margin-right: 15px;
+	}
+	&__selected-delete {
+		line-height: 13px;
+		float:right;
+	}
+}

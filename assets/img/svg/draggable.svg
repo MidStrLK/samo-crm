@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="7px" viewBox="0 0 9 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>draggable</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Предзаявки" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="предзаявки:канбан" transform="translate(-318.000000, -190.000000)" fill="#DCDCDC">
+            <g id="content_additional_cols" transform="translate(70.000000, 6.000000)">
+                <g id="1-col-copy" transform="translate(19.000000, 134.000000)">
+                    <g id="1-copy-5" transform="translate(0.000000, 43.000000)">
+                        <path d="M229,7 L238,7 L238,8 L229,8 L229,7 Z M229,10 L238,10 L238,11 L229,11 L229,10 Z M229,13 L238,13 L238,14 L229,14 L229,13 Z" id="draggable"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="16px" viewBox="0 0 21 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>nav-7</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="main-menu/default" transform="translate(-18.000000, -510.000000)" fill="#F1FDF9">
+            <path d="M19.3125,526 C18.525,526 18,525.225 18,524.4375 L18,511.3125 C18,510.525 18.525,510 19.3125,510 L37.6875,510 C38.475,510 39,510.525 39,511.3125 L39,524.4375 C39,525.225 38.475,526 37.6875,526 L19.3125,526 Z M37,524 L37,514 L29.2416992,519.925293 C28.7166992,520.319043 28.0604492,520.319043 27.5354492,519.925293 L20.1223145,513.962158 L20,524 L37,524 Z M28.5,517.746338 L35.6730957,512 L21.3601074,512 L28.5,517.746338 Z" id="nav-7"></path>
+        </g>
+    </g>
+</svg>

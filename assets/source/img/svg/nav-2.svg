@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>nav-2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="main-menu/default" transform="translate(-18.000000, -243.000000)" fill="#F1FDF9">
+            <path d="M29.8125,243 C29.2875,243 28.89375,243.2625 28.63125,243.7875 L27.7125,246.015991 L19.3125,246.015991 C18.525,246.015991 18,246.540991 18,247.328491 L18,250.875 L18,260.732544 C18,261.520044 18.525,262.045044 19.3125,262.045044 L37.6875,262.045044 C38.475,262.045044 39,261.520044 39,260.732544 L39,244.3125 C39,243.525 38.475,243 37.6875,243 L29.8125,243 Z M29.68125,247.4625 L31.0006104,245 L36,245 C36,245 37,245.372437 37,246.087891 C37,246.803345 37,250 37,250 L20,250 L20,248 L28.5,248 C29.025,248 29.41875,247.9875 29.68125,247.4625 Z M20,260 L20,251.996216 L37,251.996216 L37,260 L20,260 Z" id="nav-2"></path>
+        </g>
+    </g>
+</svg>

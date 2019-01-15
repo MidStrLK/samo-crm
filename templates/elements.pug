@@ -1,0 +1,140 @@
+doctype html
+head
+  include layout/head
+body
+  .dev-layout
+    .dev-layout__block
+      h1.dev-layout__title Быстрое создание задачи
+      .dev-layout__item
+        include ./blocks/quick-creation/base
+    .dev-layout__block
+      h1.dev-layout__title Поля форм
+      .dev-layout__subtitle Разворачивающийся список
+      .dev-layout__item
+        .field
+          .field__name Тип клиента
+          .field__value
+            .select(data-placeholder="Выберите тип")
+              select.select__default
+                option(selected, disabled)
+                option Первая опция
+                option Вторая опция
+                option Третья опция
+      .dev-layout__subtitle Разворачивающийся список с созданием пунктов
+      .dev-layout__item
+        .field
+          .field__name Тип клиента
+          .field__value
+            .select(data-editable="true")
+              select.select__default
+                option(selected, disabled)
+                option Первая опция
+                option Вторая опция
+                option Третья опция
+      .dev-layout__subtitle Текстовое поле
+      .dev-layout__item
+        label.field
+          .field__name Email
+          .field__value
+            input.field__text-input(placeholder="Введите текст")
+      .dev-layout__subtitle Поле с возможностью добавления пунктов
+      .dev-layout__item
+        .field
+          .field__name Email
+          .field__value
+            .editable-inputs
+              .editable-inputs__item
+                .editable-inputs__field
+                  input.editable-inputs__input(placeholder="Введите текст")
+                a.editable-inputs__toggle.editable-inputs__toggle_add(href="#")
+              .editable-inputs__item
+                .editable-inputs__field
+                  input.editable-inputs__input(placeholder="Введите текст")
+                a.editable-inputs__toggle.editable-inputs__toggle_minus(href="#")
+      .dev-layout__subtitle Выбор даты
+      .dev-layout__item
+        label.field
+          .field__name Дата создания
+          .field__value
+            input.field__date-input(placeholder="Выберите дату")
+      .dev-layout__subtitle Вероятность покупки
+      .dev-layout__item
+        .field
+          .field__name Вероятность:
+          .field__value.field__value_progress
+            .progress-bar
+              .progress-bar__line(style={"width": "45%"})
+              .progress-bar__base
+      .dev-layout__subtitle Сравнение валют
+      .dev-layout__item
+        .field
+          .field__name К оплате:
+          .field__value
+            .field__col-two
+              .field__col
+                label.field__currency
+                  .field__currency-input-col
+                    input.field__text-input.field__text-input_right-padding(placeholder="Введите сумму")
+                  .field__currency-type RUB
+              .field__col-separator ≈
+              .field__col
+                label.field__currency
+                  .field__currency-input-col
+                    input.field__text-input.field__text-input_right-padding(placeholder="Введите сумму")
+                  .field__currency-type USD
+      .dev-layout__subtitle От и до
+      .dev-layout__item
+        .field
+          .field__name Ночей:
+          .field__value
+            .field__col-two
+              .field__col
+                input.field__text-input(placeholder="От")
+              .field__col-separator -
+              .field__col
+                input.field__text-input(placeholder="До")
+      .dev-layout__subtitle Примечание
+      .dev-layout__item
+        label.field
+          .field__name Примечание:
+          .field__value
+            textarea.field__textarea
+      .dev-layout__subtitle Поле с несколькими чекбоксами
+      .dev-layout__item
+        .field
+          .field__name Примечание:
+          .field__value
+            .field__equal-cols
+              .field__equal-col
+                label.checkbox
+                  input(type="checkbox").checkbox__input
+                  span.desktop__type-checkbox
+                  div.checkbox__text Пример текста Пример текста
+              .field__equal-col
+                label.checkbox
+                  input(type="checkbox").checkbox__input
+                  span.desktop__type-checkbox
+                  div.checkbox__text Пример текста
+              .field__equal-col
+                label.checkbox
+                  input(type="checkbox").checkbox__input
+                  span.desktop__type-checkbox
+                  div.checkbox__text Пример текста
+              .field__equal-col
+                label.checkbox
+                  input(type="checkbox").checkbox__input
+                  span.desktop__type-checkbox
+                  div.checkbox__text Пример текста
+      .dev-layout__subtitle Один чекбокс в строке
+      .dev-layout__item
+        .field
+          .field__value
+            .field__equal-cols
+              .field__equal-col
+                label.checkbox
+                  input(type="checkbox").checkbox__input
+                  span.desktop__type-checkbox
+                  div.checkbox__text Пример текста Пример текста
+
+  script(src="assets/js/min.libraries.js")
+  script(src="assets/js/scripts.js")

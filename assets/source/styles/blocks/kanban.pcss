@@ -1,0 +1,48 @@
+.kanban {
+  &__item {
+    margin-bottom: 7px;
+    font-size: 12px;
+    &_small {
+      font-size: 11px;
+    }
+    &_wide-low-margin {
+      margin-bottom: 1px;
+    }
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  &__grey {
+    color:$grey-t;
+    font-size: 11px;
+  }
+  &__date {
+    font-size: 9px;
+    font-style:italic;
+    color:$grey-t;
+  }
+  &_wide {
+    .kanban__item {
+      width: 100%;
+      margin-bottom: 1px;
+      display: table;
+      &_rows {
+        margin:5px 0 3px; 
+      }
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+    .kanban__text {
+      margin-right: 6px;
+      display: inline;
+    }
+    .kanban__grey {
+      font-size: inherit;
+    }
+    .data-list__row {
+      width: 50%;
+      float:left;
+    }
+  }
+}

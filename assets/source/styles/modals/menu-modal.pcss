@@ -1,0 +1,104 @@
+.menu-modal {
+  width: 450px;
+  box-shadow:0px 1px 6px rgba(0,0,0,0.15);
+  border-radius: 2px 0 0 2px;
+  background-color: #fff;
+  position: absolute;
+  z-index: $z-left-menu;
+  left:70px;
+  top:6px;
+  bottom:6px;
+  transition-duration: 0.2s;
+  opacity: 0;
+  transition-timing-function: ease;
+  visibility: hidden;
+  &_active {
+    opacity: 1;
+    visibility: visible;
+  }
+  &_padding {
+    padding:24px 24px 27px;
+  }
+  &_grey {
+    background-color: $grey;
+  }
+  &__arrow {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    z-index: $z-left-menu;
+    left:-5px;
+    box-shadow: -2px 2px 2px 0 rgba(0,0,0,.15);
+    transform: rotate(45deg);
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 0;
+    visibility: hidden;
+    &_active {
+      opacity: 1;
+      visibility: visible;
+    }
+    &_search {
+      background-color: $grey;
+    }
+  }
+  &__wrapper {
+    transition: opacity 0.3s ease;
+    overflow: hidden;
+    height: 0;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    &_active {
+      height: 100%;
+      visibility: visible;
+      opacity: 1;
+    }
+    &_active.menu-modal__wrapper_padding {
+      padding:24px 24px 27px;
+    }
+  }
+  &__title {
+    margin-bottom: 14px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  &__search {
+    height: 60px;
+    padding:22px 22px 0;
+    border-bottom: 1px solid $border;
+    background-color: #fff;
+    position: relative;
+    &:before {
+      width: 16px;
+      height: 16px;
+      background-size:16px;
+      position: relative;
+      top:1px;
+    }
+    .search-field__wrapper {
+      margin-left:25px;
+    }
+    .search-field__input {
+      font-size:15px;
+    }
+  }
+  &__search-result {
+    padding:17px 24px 26px;
+    position: absolute;
+    left:0px;
+    right:0px;
+    top:60px;
+    bottom:0px;
+    //height: 100%;
+  }
+  &__note {
+    margin-bottom: 15px;
+    color:$grey-t;
+    font-style: italic;
+  }
+  &__toggle {
+    margin-bottom:6px;
+  }
+}

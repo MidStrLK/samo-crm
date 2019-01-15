@@ -1,0 +1,18 @@
+.quick-creation__content.quick-creation__content_active(data-tab="conversation")
+  .quick-creation__row
+    .field.quick-creation__subject
+      .field__value
+        .select(data-placeholder="Выберите тему")
+          select.select__default
+            option(selected, disabled)
+            option Первая опция
+            option Вторая опция
+            option Третья опция
+  textarea.quick-creation__description(placeholder="Введите описание")
+  .quick-creation__footer
+    .quick-creation__footer-right
+      button.quick-creation__send Добавить
+    .quick-creation__footer-left
+      .quick-creation__footer-col.quick-creation__footer-col_associated
+        .quick-creation__footer-col-crop
+          a.pseudo(href="#") Предзаявка №1234

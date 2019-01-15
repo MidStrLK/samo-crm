@@ -1,0 +1,44 @@
+.divided-list {
+	&_first-border {
+		border-top:1px solid $border;
+	}
+	&_without-last .divided-list__item:last-child {
+		border-bottom:none;
+	}
+	&__item {
+		padding:16px 0;
+		border-bottom:1px solid $border;
+	}
+	&__title {
+		font-size: 14px;
+		font-weight: 500;
+		&:before {
+			content:"";
+			width: 10px;
+			height: 10px;
+			margin-top:3px;
+			background-position: center;
+			background-repeat: no-repeat;
+			float:right;
+		}
+		&_hide {
+			margin-bottom: 12px;
+		}
+		&_show:before {
+			background-image: svg-load('../img/svg/plus.svg', fill=#000);
+		}
+		&_hide:before {
+			background-image: svg-load('../img/svg/minus.svg', fill=#000);
+		}
+		&_show:hover, &_hide:hover {
+			color:$green-t;
+			cursor: pointer;
+		}
+	}
+	&__hidden {
+		display: none;
+		&_show {
+			display: block;
+		}
+	}
+}

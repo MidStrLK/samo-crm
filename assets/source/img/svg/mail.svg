@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>mail</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Предзаявки" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="предзаявки:выбрана-правая-часть,-расширяющаяся,-большая" transform="translate(-1119.000000, -915.000000)" fill="#000000">
+            <g id="content" transform="translate(70.000000, 6.000000)">
+                <g id="right:wide" transform="translate(419.000000, 114.000000)">
+                    <g id="customer" transform="translate(24.000000, 72.000000)">
+                        <g id="table" transform="translate(0.000000, 688.000000)">
+                            <g id="2" transform="translate(1.000000, 34.000000)">
+                                <path d="M620,13 L606,13 C605.4,13 605,12.6 605,12 L605,2 C605,1.4 605.4,1 606,1 L620,1 C620.6,1 621,1.4 621,2 L621,12 C621,12.6 620.6,13 620,13 L620,13 Z M607,11 L619,11 L619,4.3 L613.6,8.8 C613.2,9.1 612.7,9.1 612.3,8.8 L607,4.3 L607,11 L607,11 Z M608.6,3 L613,6.7 L617.4,3 L608.6,3 L608.6,3 Z" id="mail"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

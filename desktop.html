@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<head>
+  <title>САМО-КРМ</title>
+  <link rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="blackout blackout_full-screen"></div>
+  <div class="menu-modal">
+    <div class="menu-modal__arrow"></div>
+    <div class="menu-modal__wrapper menu-modal_grey" id="menu-modal-search">
+      <label class="search-field menu-modal__search" for="main-search">
+        <div class="search-field__wrapper">
+          <input class="search-field__input" placeholder="Что будем искать?" id="main-search">
+        </div>
+      </label>
+      <div class="menu-modal__search-result scrollable">
+        <div class="menu-modal__note">Поиск идет по разделам:</div>
+        <div class="divided-list divided-list__switchable divided-list_first-border">
+          <div class="divided-list__item">
+            <div class="divided-list__title divided-list__title_show">Контакты 2 найдено</div>
+            <div class="divided-list__hidden">
+              <div class="user-item">
+                <div class="user-item__top">
+                  <div class="user-item__top-text">
+                    <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                    <div class="user-item__note">
+                       Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+                  </div>
+                </div>
+                <div class="user-item__description">Позвонить Александру Сабурову и узнать что там по-поводу Японии он решил.</div>
+              </div>
+              <div class="user-item">
+                <div class="user-item__top">
+                  <div class="user-item__top-text">
+                    <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                    <div class="user-item__note">
+                       Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+                  </div>
+                </div>
+                <div class="user-item__description">Позвонить Александру Сабурову и узнать что там по-поводу Японии он решил.</div>
+              </div>
+            </div>
+          </div>
+          <div class="divided-list__item">
+            <div class="divided-list__title divided-list__title_show">Компании 1 найдена</div>
+            <div class="divided-list__hidden">
+              <div class="user-item">
+                <div class="user-item__top">
+                  <div class="user-item__top-text">
+                    <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                    <div class="user-item__note">
+                       Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+                  </div>
+                </div>
+                <div class="user-item__description">Позвонить Александру Сабурову и узнать что там по-поводу Японии он решил.</div>
+              </div>
+            </div>
+          </div>
+          <div class="divided-list__item">
+            <div class="divided-list__title">Задачи</div>
+          </div>
+          <div class="divided-list__item">
+            <div class="divided-list__title divided-list__title_show">Заявки 1 найдена</div>
+            <div class="divided-list__hidden">
+              <div class="user-item">
+                <div class="user-item__top">
+                  <div class="user-item__top-text">
+                    <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                    <div class="user-item__note">
+                       Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+                  </div>
+                </div>
+                <div class="user-item__description">Позвонить Александру Сабурову и узнать что там по-поводу Японии он решил.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-modal__wrapper menu-modal__wrapper_padding scrollable" id="menu-modal-notifications">
+      <div class="menu-modal__title">Системные напоминания</div>
+      <div class="toggle menu-modal__toggle">
+        <div class="toggle__item header__toggle-item toggle__item_is-active">Все 10</div>
+        <div class="toggle__item header__toggle-item">Новое 2</div>
+        <div class="toggle__item header__toggle-item">Прочитанное 3</div>
+      </div>
+      <div class="divided-list divided-list_without-last">
+        <div class="divided-list__item">
+          <div class="user-item">
+            <div class="user-item__marker">
+              <div class="marker marker_task">день рождения</div>
+            </div>
+            <div class="user-item__top">
+              <div class="user-item__top-text">
+                <div class="user-item__title"><a class="user-item__link" href="#">Александр Сабуров</a>, 20 августа</div>
+                <div class="user-item__note">
+                   Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divided-list__item">
+          <div class="user-item">
+            <div class="user-item__marker">
+              <div class="marker marker_payment">просрочка платежа</div>
+            </div>
+            <div class="user-item__top">
+              <div class="user-item__top-text">
+                <div class="user-item__title">20 000 руб. на 20 августа</div>
+                <div class="user-item__note">
+                   от Александра Сабурова,  <a class="user-item__responsible" href="#">предзаявка 2055-22</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-modal__wrapper menu-modal__wrapper_padding scrollable" id="menu-modal-tasks">
+      <div class="menu-modal__title">Список задач</div>
+      <div class="toggle menu-modal__toggle">
+        <div class="toggle__item header__toggle-item toggle__item_is-active">Сегодня 2</div>
+        <div class="toggle__item header__toggle-item">Завтра 2</div>
+        <div class="toggle__item header__toggle-item">Неделя 2</div>
+        <div class="toggle__item header__toggle-item">Просроч. 2</div>
+      </div>
+      <div class="divided-list divided-list_without-last">
+        <div class="divided-list__item">
+          <div class="user-item">
+            <div class="user-item__marker">
+              <div class="marker marker_task">задача</div>
+            </div>
+            <div class="user-item__top">
+              <div class="user-item__top-text">
+                <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                <div class="user-item__note">
+                   Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+              </div>
+              <div class="user-item__check">
+                <label class="checkbox user-item__checkbox">
+                  <input class="checkbox__input" type="checkbox"><span></span>
+                </label>
+              </div>
+            </div>
+            <div class="user-item__description">Позвонить Александру Сабурову и узнать</div>
+          </div>
+        </div>
+        <div class="divided-list__item">
+          <div class="user-item">
+            <div class="user-item__marker">
+              <div class="marker marker_task">задача</div>
+            </div>
+            <div class="user-item__top">
+              <div class="user-item__top-text">
+                <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                <div class="user-item__note">
+                   Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+              </div>
+              <div class="user-item__check">
+                <label class="checkbox user-item__checkbox">
+                  <input class="checkbox__input" type="checkbox"><span></span>
+                </label>
+              </div>
+            </div>
+            <div class="user-item__description">Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил</div>
+          </div>
+        </div>
+        <div class="divided-list__item">
+          <div class="user-item">
+            <div class="user-item__marker">
+              <div class="marker marker_task">задача</div>
+            </div>
+            <div class="user-item__top">
+              <div class="user-item__top-text">
+                <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                <div class="user-item__note">
+                   Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+              </div>
+              <div class="user-item__check">
+                <label class="checkbox user-item__checkbox">
+                  <input class="checkbox__input" type="checkbox"><span></span>
+                </label>
+              </div>
+            </div>
+            <div class="user-item__description">Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил</div>
+          </div>
+        </div>
+        <div class="divided-list__item">
+          <div class="user-item">
+            <div class="user-item__marker">
+              <div class="marker marker_task">задача</div>
+            </div>
+            <div class="user-item__top">
+              <div class="user-item__top-text">
+                <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                <div class="user-item__note">
+                   Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+              </div>
+              <div class="user-item__check">
+                <label class="checkbox user-item__checkbox">
+                  <input class="checkbox__input" type="checkbox"><span></span>
+                </label>
+              </div>
+            </div>
+            <div class="user-item__description">Позвонить Александру Сабурову и узнать</div>
+          </div>
+        </div>
+        <div class="divided-list__item">
+          <div class="user-item">
+            <div class="user-item__marker">
+              <div class="marker marker_task">задача</div>
+            </div>
+            <div class="user-item__top">
+              <div class="user-item__top-text">
+                <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                <div class="user-item__note">
+                   Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+              </div>
+              <div class="user-item__check">
+                <label class="checkbox user-item__checkbox">
+                  <input class="checkbox__input" type="checkbox"><span></span>
+                </label>
+              </div>
+            </div>
+            <div class="user-item__description">Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил</div>
+          </div>
+        </div>
+        <div class="divided-list__item">
+          <div class="user-item">
+            <div class="user-item__marker">
+              <div class="marker marker_task">задача</div>
+            </div>
+            <div class="user-item__top">
+              <div class="user-item__top-text">
+                <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                <div class="user-item__note">
+                   Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+              </div>
+              <div class="user-item__check">
+                <label class="checkbox user-item__checkbox">
+                  <input class="checkbox__input" type="checkbox"><span></span>
+                </label>
+              </div>
+            </div>
+            <div class="user-item__description">Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил</div>
+          </div>
+        </div>
+        <div class="divided-list__item">
+          <div class="user-item">
+            <div class="user-item__marker">
+              <div class="marker marker_task">задача</div>
+            </div>
+            <div class="user-item__top">
+              <div class="user-item__top-text">
+                <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                <div class="user-item__note">
+                   Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+              </div>
+              <div class="user-item__check">
+                <label class="checkbox user-item__checkbox">
+                  <input class="checkbox__input" type="checkbox"><span></span>
+                </label>
+              </div>
+            </div>
+            <div class="user-item__description">Позвонить Александру Сабурову и узнать</div>
+          </div>
+        </div>
+        <div class="divided-list__item">
+          <div class="user-item">
+            <div class="user-item__marker">
+              <div class="marker marker_task">задача</div>
+            </div>
+            <div class="user-item__top">
+              <div class="user-item__top-text">
+                <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                <div class="user-item__note">
+                   Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+              </div>
+              <div class="user-item__check">
+                <label class="checkbox user-item__checkbox">
+                  <input class="checkbox__input" type="checkbox"><span></span>
+                </label>
+              </div>
+            </div>
+            <div class="user-item__description">Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил</div>
+          </div>
+        </div>
+        <div class="divided-list__item">
+          <div class="user-item">
+            <div class="user-item__marker">
+              <div class="marker marker_task">задача</div>
+            </div>
+            <div class="user-item__top">
+              <div class="user-item__top-text">
+                <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                <div class="user-item__note">
+                   Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+              </div>
+              <div class="user-item__check">
+                <label class="checkbox user-item__checkbox">
+                  <input class="checkbox__input" type="checkbox"><span></span>
+                </label>
+              </div>
+            </div>
+            <div class="user-item__description">Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил</div>
+          </div>
+        </div>
+        <div class="divided-list__item">
+          <div class="user-item">
+            <div class="user-item__marker">
+              <div class="marker marker_task">задача</div>
+            </div>
+            <div class="user-item__top">
+              <div class="user-item__top-text">
+                <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                <div class="user-item__note">
+                   Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+              </div>
+              <div class="user-item__check">
+                <label class="checkbox user-item__checkbox">
+                  <input class="checkbox__input" type="checkbox"><span></span>
+                </label>
+              </div>
+            </div>
+            <div class="user-item__description">Позвонить Александру Сабурову и узнать</div>
+          </div>
+        </div>
+        <div class="divided-list__item">
+          <div class="user-item">
+            <div class="user-item__marker">
+              <div class="marker marker_task">задача</div>
+            </div>
+            <div class="user-item__top">
+              <div class="user-item__top-text">
+                <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                <div class="user-item__note">
+                   Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+              </div>
+              <div class="user-item__check">
+                <label class="checkbox user-item__checkbox">
+                  <input class="checkbox__input" type="checkbox"><span></span>
+                </label>
+              </div>
+            </div>
+            <div class="user-item__description">Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил</div>
+          </div>
+        </div>
+        <div class="divided-list__item">
+          <div class="user-item">
+            <div class="user-item__marker">
+              <div class="marker marker_task">задача</div>
+            </div>
+            <div class="user-item__top">
+              <div class="user-item__top-text">
+                <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                <div class="user-item__note">
+                   Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+              </div>
+              <div class="user-item__check">
+                <label class="checkbox user-item__checkbox">
+                  <input class="checkbox__input" type="checkbox"><span></span>
+                </label>
+              </div>
+            </div>
+            <div class="user-item__description">Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил</div>
+          </div>
+        </div>
+        <div class="divided-list__item">
+          <div class="user-item">
+            <div class="user-item__marker">
+              <div class="marker marker_task">задача</div>
+            </div>
+            <div class="user-item__top">
+              <div class="user-item__top-text">
+                <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                <div class="user-item__note">
+                   Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+              </div>
+              <div class="user-item__check">
+                <label class="checkbox user-item__checkbox">
+                  <input class="checkbox__input" type="checkbox"><span></span>
+                </label>
+              </div>
+            </div>
+            <div class="user-item__description">Позвонить Александру Сабурову и узнать</div>
+          </div>
+        </div>
+        <div class="divided-list__item">
+          <div class="user-item">
+            <div class="user-item__marker">
+              <div class="marker marker_task">задача</div>
+            </div>
+            <div class="user-item__top">
+              <div class="user-item__top-text">
+                <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                <div class="user-item__note">
+                   Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+              </div>
+              <div class="user-item__check">
+                <label class="checkbox user-item__checkbox">
+                  <input class="checkbox__input" type="checkbox"><span></span>
+                </label>
+              </div>
+            </div>
+            <div class="user-item__description">Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил</div>
+          </div>
+        </div>
+        <div class="divided-list__item">
+          <div class="user-item">
+            <div class="user-item__marker">
+              <div class="marker marker_task">задача</div>
+            </div>
+            <div class="user-item__top">
+              <div class="user-item__top-text">
+                <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                <div class="user-item__note">
+                   Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+              </div>
+              <div class="user-item__check">
+                <label class="checkbox user-item__checkbox">
+                  <input class="checkbox__input" type="checkbox"><span></span>
+                </label>
+              </div>
+            </div>
+            <div class="user-item__description">Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal scrollable modal_kanban-quickview" data-modal="prebid-kanban-quickview">
+    <div class="table-quick-view__block">
+      <div class="text text_small text_grey">Создана 10 задач, 4 общения за 10 дней </div>Активность по предварительной заявке: <span class="marked">хорошая</span>
+      <div class="table-quick-view__quick-creation">
+        <div class="quick-creation quick-creation_double-form">
+          <div class="quick-creation__header">
+            <div class="quick-creation__header-left"><a class="quick-creation__tab quick-creation__tab_active" href="#" data-tab="conversation">Общение</a><a class="quick-creation__tab" href="#" data-tab="task">Задача</a></div>
+            <div class="quick-creation__header-right">
+              <label class="quick-creation__type quick-creation__type_1 quick-creation__type_active" href="#">
+                <input type="radio" name="type" checked><span></span>
+              </label>
+              <label class="quick-creation__type quick-creation__type_2" href="#">
+                <input type="radio" name="type"><span></span>
+              </label>
+              <label class="quick-creation__type quick-creation__type_3" href="#">
+                <input type="radio" name="type"><span></span>
+              </label>
+            </div>
+          </div>
+          <div class="quick-creation__content quick-creation__content_active" data-tab="conversation">
+            <div class="quick-creation__row">
+              <div class="field quick-creation__subject">
+                <div class="field__value">
+                  <div class="select" data-placeholder="Выберите тему">
+                    <select class="select__default">
+                      <option selected disabled></option>
+                      <option>Первая опция</option>
+                      <option>Вторая опция</option>
+                      <option>Третья опция</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <textarea class="quick-creation__description" placeholder="Введите описание"></textarea>
+            <div class="quick-creation__footer">
+              <div class="quick-creation__footer-right">
+                <button class="quick-creation__send">Добавить</button>
+              </div>
+              <div class="quick-creation__footer-left">
+                <div class="quick-creation__footer-col quick-creation__footer-col_associated">
+                  <div class="quick-creation__footer-col-crop"><a class="pseudo" href="#">Предзаявка №1234</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="quick-creation__content" data-tab="task">
+            <div class="quick-creation__row">
+              <div class="quick-creation__task-settings">На <a class="pseudo" href="#">Сегодня </a> на <a class="pseudo" href="#">Весь день</a>, <a class="pseudo" href="#">Средний  </a> приоритет</div>
+            </div>
+            <textarea class="quick-creation__description" placeholder="Введите описание"></textarea>
+            <div class="quick-creation__footer">
+              <div class="quick-creation__footer-right">
+                <button class="quick-creation__send">Добавить</button>
+              </div>
+              <div class="quick-creation__footer-left">
+                <div class="quick-creation__footer-col quick-creation__footer-col_responsible">
+                  <div class="quick-creation__footer-col-crop"><a class="pseudo" href="#">Булычева Ольга Булычева</a></div>
+                </div>
+                <div class="quick-creation__footer-col quick-creation__footer-col_associated">
+                  <div class="quick-creation__footer-col-crop"><a class="pseudo" href="#">Предзаявка №1234</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divided-list">
+        <div class="divided-list__item">
+          <div class="user-item">
+            <div class="user-item__marker">
+              <div class="marker marker_task">задача</div>
+            </div>
+            <div class="user-item__top">
+              <div class="user-item__top-text">
+                <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                <div class="user-item__note">
+                   Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+              </div>
+              <div class="user-item__check">
+                <label class="checkbox user-item__checkbox">
+                  <input class="checkbox__input" type="checkbox"><span></span>
+                </label>
+              </div>
+            </div>
+            <div class="user-item__description">Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил</div>
+          </div>
+        </div>
+        <div class="divided-list__item">
+          <div class="user-item">
+            <div class="user-item__marker">
+              <div class="marker marker_conversation">общение</div>
+            </div>
+            <div class="user-item__top">
+              <div class="user-item__top-text">
+                <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                <div class="user-item__note">
+                   Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+              </div>
+            </div>
+            <div class="user-item__description">Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил</div>
+          </div>
+        </div>
+      </div>
+      <div class="num-stats table-quick-view__num-stats">
+        <div class="num-stats__col">
+          <div class="num-stats__text">Первый контакт через:</div>
+          <div class="num-stats__num">2 дня</div>
+        </div>
+        <div class="num-stats__col">
+          <div class="num-stats__text">В работе:</div>
+          <div class="num-stats__num">20 дней</div>
+        </div>
+      </div>
+    </div>
+    <div class="table-quick-view__block table-quick-view__block_grey">
+      <div class="title"><a class="pseudo show_prebid_window" href="#">Предзаявка №250-11</a></div>
+      <div class="field-list">
+        <div class="field field-list__item">
+          <div class="field__name">Статус:</div>
+          <div class="field__value">
+            <div class="select" data-placeholder="Выберите статус">
+              <select class="select__default">
+                <option selected disabled></option>
+                <option>Первая опция</option>
+                <option>Вторая опция</option>
+                <option>Третья опция</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field field-list__item">
+          <div class="field__name">Реклама:</div>
+          <div class="field__value">
+            <div class="select" data-placeholder="Выберите рекламу">
+              <select class="select__default">
+                <option selected disabled></option>
+                <option>Первая опция</option>
+                <option>Вторая опция</option>
+                <option>Третья опция</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field field-list__item">
+          <div class="field__name">Вероятность:</div>
+          <div class="field__value field__value_progress">
+            <div class="progress-bar">
+              <div class="progress-bar__line" style="width:45%;"></div>
+              <div class="progress-bar__base"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="subtitle subtitle_margin-top">Клиент</div>
+      <div class="field-list">
+        <div class="field field-list__item">
+          <div class="field__name">Клиент:</div>
+          <div class="field__value">
+            <div class="select" data-placeholder="Выберите клиента">
+              <select class="select__default">
+                <option selected disabled></option>
+                <option>Первая опция</option>
+                <option>Вторая опция</option>
+                <option>Третья опция</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field field-list__item">
+          <div class="field__name">Тип клиента:</div>
+          <div class="field__value">
+            <div class="select" data-placeholder="Выберите тип">
+              <select class="select__default">
+                <option selected disabled></option>
+                <option>Первая опция</option>
+                <option>Вторая опция</option>
+                <option>Третья опция</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="subtitle subtitle_margin-top">Пожелания</div>
+      <div class="field-list">
+        <div class="field field-list__item">
+          <div class="field__name">Страна:</div>
+          <div class="field__value">
+            <div class="select" data-placeholder="Выберите страну">
+              <select class="select__default">
+                <option selected disabled></option>
+                <option>Первая опция</option>
+                <option>Вторая опция</option>
+                <option>Третья опция</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field field-list__item">
+          <div class="field__name">Курорт:</div>
+          <div class="field__value">
+            <div class="select" data-placeholder="Выберите курорт">
+              <select class="select__default">
+                <option selected disabled></option>
+                <option>Первая опция</option>
+                <option>Вторая опция</option>
+                <option>Третья опция</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <label class="field field-list__item">
+          <div class="field__name">Дата вылета:</div>
+          <div class="field__value">
+            <input class="field__date-input" placeholder="Введите дату">
+          </div>
+        </label>
+        <label class="field field-list__item">
+          <div class="field__name">Цена до:</div>
+          <div class="field__value">
+            <input class="field__text-input" placeholder="0 руб.">
+          </div>
+        </label>
+        <label class="field field-list__item">
+          <div class="field__name">Примечание:</div>
+          <div class="field__value">
+            <textarea class="field__textarea" placeholder="Если нужно, введите примечание"></textarea>
+          </div>
+        </label>
+      </div>
+      <div class="num-stats table-quick-view__num-stats">
+        <div class="num-stats__col">
+          <div class="num-stats__text">Кол-во подборок:</div>
+          <div class="num-stats__num">15</div>
+        </div>
+        <div class="num-stats__col">
+          <div class="num-stats__text">Туров предложено:</div>
+          <div class="num-stats__num">5</div>
+        </div>
+      </div>
+    </div>
+    <div class="table-quick-view__block table-quick-view__block_without-padding">
+      <div class="tabs">
+        <div class="tabs__wrapper"><a class="tabs__tab tabs__tab_active" href="#">Рабочий стол</a><a class="tabs__tab" href="#">Статистика</a></div>
+      </div>
+      <div class="table-quick-view__block-with-tabs">
+        <div class="table-quick-view__quick-creation">
+          <div class="quick-creation quick-creation_double-form">
+            <div class="quick-creation__header">
+              <div class="quick-creation__header-left"><a class="quick-creation__tab quick-creation__tab_active" href="#" data-tab="conversation">Общение</a><a class="quick-creation__tab" href="#" data-tab="task">Задача</a></div>
+              <div class="quick-creation__header-right">
+                <label class="quick-creation__type quick-creation__type_1 quick-creation__type_active" href="#">
+                  <input type="radio" name="type" checked><span></span>
+                </label>
+                <label class="quick-creation__type quick-creation__type_2" href="#">
+                  <input type="radio" name="type"><span></span>
+                </label>
+                <label class="quick-creation__type quick-creation__type_3" href="#">
+                  <input type="radio" name="type"><span></span>
+                </label>
+              </div>
+            </div>
+            <div class="quick-creation__content quick-creation__content_active" data-tab="conversation">
+              <div class="quick-creation__row">
+                <div class="field quick-creation__subject">
+                  <div class="field__value">
+                    <div class="select" data-placeholder="Выберите тему">
+                      <select class="select__default">
+                        <option selected disabled></option>
+                        <option>Первая опция</option>
+                        <option>Вторая опция</option>
+                        <option>Третья опция</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <textarea class="quick-creation__description" placeholder="Введите описание"></textarea>
+              <div class="quick-creation__footer">
+                <div class="quick-creation__footer-right">
+                  <button class="quick-creation__send">Добавить</button>
+                </div>
+                <div class="quick-creation__footer-left">
+                  <div class="quick-creation__footer-col quick-creation__footer-col_associated">
+                    <div class="quick-creation__footer-col-crop"><a class="pseudo" href="#">Предзаявка №1234</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="quick-creation__content" data-tab="task">
+              <div class="quick-creation__row">
+                <div class="quick-creation__task-settings">На <a class="pseudo" href="#">Сегодня </a> на <a class="pseudo" href="#">Весь день</a>, <a class="pseudo" href="#">Средний  </a> приоритет</div>
+              </div>
+              <textarea class="quick-creation__description" placeholder="Введите описание"></textarea>
+              <div class="quick-creation__footer">
+                <div class="quick-creation__footer-right">
+                  <button class="quick-creation__send">Добавить</button>
+                </div>
+                <div class="quick-creation__footer-left">
+                  <div class="quick-creation__footer-col quick-creation__footer-col_responsible">
+                    <div class="quick-creation__footer-col-crop"><a class="pseudo" href="#">Булычева Ольга Булычева</a></div>
+                  </div>
+                  <div class="quick-creation__footer-col quick-creation__footer-col_associated">
+                    <div class="quick-creation__footer-col-crop"><a class="pseudo" href="#">Предзаявка №1234</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divided-list">
+          <div class="divided-list__item">
+            <div class="user-item">
+              <div class="user-item__marker">
+                <div class="marker marker_task">задача</div>
+              </div>
+              <div class="user-item__top">
+                <div class="user-item__top-text">
+                  <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                  <div class="user-item__note">
+                     Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+                </div>
+                <div class="user-item__check">
+                  <label class="checkbox user-item__checkbox">
+                    <input class="checkbox__input" type="checkbox"><span></span>
+                  </label>
+                </div>
+              </div>
+              <div class="user-item__description">Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил</div>
+            </div>
+          </div>
+          <div class="divided-list__item">
+            <div class="user-item">
+              <div class="user-item__marker">
+                <div class="marker marker_conversation">общение</div>
+              </div>
+              <div class="user-item__top">
+                <div class="user-item__top-text">
+                  <div class="user-item__title">Позвонить 10 августа в 17:00</div>
+                  <div class="user-item__note">
+                     Средний приоритет, ответственный <a class="user-item__responsible" href="#">Алексей</a></div>
+                </div>
+              </div>
+              <div class="user-item__description">Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" data-modal="edit-task">
+    <div class="quick-creation quick-creation_without-border quick-creation_modal quick-creation_active">
+      <div class="quick-creation__header">
+        <div class="quick-creation__header-left">Задача</div>
+        <div class="quick-creation__header-right">
+          <label class="quick-creation__type quick-creation__type_1 quick-creation__type_active" href="#">
+            <input type="radio" name="type" checked><span></span>
+          </label>
+          <label class="quick-creation__type quick-creation__type_2" href="#">
+            <input type="radio" name="type"><span></span>
+          </label>
+          <label class="quick-creation__type quick-creation__type_3" href="#">
+            <input type="radio" name="type"><span></span>
+          </label>
+        </div>
+      </div>
+      <div class="quick-creation__content quick-creation__content_active" data-tab="conversation">
+        <div class="quick-creation__row">
+          <div class="field quick-creation__subject">
+            <div class="field__value">
+              <div class="select" data-placeholder="Выберите тему">
+                <select class="select__default">
+                  <option selected disabled></option>
+                  <option>Первая опция</option>
+                  <option>Вторая опция</option>
+                  <option>Третья опция</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <textarea class="quick-creation__description" placeholder="Введите описание"></textarea>
+        <div class="quick-creation__footer">
+          <div class="quick-creation__footer-right">
+            <button class="quick-creation__send">Добавить</button>
+          </div>
+          <div class="quick-creation__footer-left">
+            <div class="quick-creation__footer-col quick-creation__footer-col_associated">
+              <div class="quick-creation__footer-col-crop"><a class="pseudo" href="#">Предзаявка №1234</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="left-menu">
+    <div class="left-menu__close-window">Назад</div>
+    <div class="left-menu__avatar"><img src="assets/img/user_avatar.png"></div><a class="left-menu__item left-menu__item_full-size" href="#" data-menu-modal="#menu-modal-tasks">
+      <div class="left-menu__icon left-menu__icon_tasks"></div></a><a class="left-menu__item left-menu__item_full-size" href="#" data-menu-modal="#menu-modal-notifications">
+      <div class="left-menu__attention">3</div>
+      <div class="left-menu__icon left-menu__icon_reminder"></div></a><a class="left-menu__item left-menu__item_full-size" href="#" data-menu-modal="#menu-modal-search">
+      <div class="left-menu__icon left-menu__icon_search"></div></a>
+    <div class="left-menu__item left-menu__item_category" href="#"><a class="left-menu__to-category" href="#">
+        <div class="left-menu__icon left-menu__icon_nav-1"></div>
+        <div class="left-menu__tip">Раб. стол</div></a></div>
+    <div class="left-menu__item left-menu__item_category" href="#"><a class="left-menu__to-category" href="#">
+        <div class="left-menu__icon left-menu__icon_nav-2"></div>
+        <div class="left-menu__tip">Предзаявки</div></a>
+      <div class="left-menu__submenu">
+        <div class="left-menu__submenu-title">Воронки продаж:</div>
+        <div class="left-menu__subitem"><a class="left-menu__link" href="#">В работе</a></div>
+        <div class="left-menu__subitem"><a class="left-menu__link" href="#">Контроль качества</a></div>
+        <div class="left-menu__subitem"><a class="left-menu__link" href="#">Еще одна</a></div>
+      </div>
+    </div>
+    <div class="left-menu__item left-menu__item_category" href="#"><a class="left-menu__to-category" href="#">
+        <div class="left-menu__icon left-menu__icon_nav-3"></div>
+        <div class="left-menu__tip">Заявки</div></a>
+      <div class="left-menu__submenu">
+        <div class="left-menu__submenu-title">Воронки продаж:</div>
+        <div class="left-menu__subitem"><a class="left-menu__link" href="#">В работе</a></div>
+        <div class="left-menu__subitem"><a class="left-menu__link" href="#">Контроль качества</a></div>
+      </div>
+    </div>
+    <div class="left-menu__item left-menu__item_category" href="#"><a class="left-menu__to-category" href="#">
+        <div class="left-menu__icon left-menu__icon_nav-4"></div>
+        <div class="left-menu__tip">Задачи</div></a></div>
+    <div class="left-menu__item left-menu__item_category" href="#"><a class="left-menu__to-category" href="#">
+        <div class="left-menu__icon left-menu__icon_nav-5"></div>
+        <div class="left-menu__tip">Общение</div></a></div>
+    <div class="left-menu__item left-menu__item_category" href="#"><a class="left-menu__to-category" href="#">
+        <div class="left-menu__icon left-menu__icon_nav-6"></div>
+        <div class="left-menu__tip">Покупатели</div></a></div>
+    <div class="left-menu__item left-menu__item_category" href="#"><a class="left-menu__to-category" href="#">
+        <div class="left-menu__icon left-menu__icon_nav-7"></div>
+        <div class="left-menu__tip">Рассылки</div></a></div>
+    <div class="left-menu__item left-menu__item_category" href="#"><a class="left-menu__to-category" href="#">
+        <div class="left-menu__icon left-menu__icon_nav-8"></div>
+        <div class="left-menu__tip">Отчеты</div></a></div>
+    <div class="left-menu__item left-menu__item_category" href="#"><a class="left-menu__to-category" href="#">
+        <div class="left-menu__icon left-menu__icon_nav-9"></div>
+        <div class="left-menu__tip">Настройки</div></a></div>
+    <div class="left-menu__item left-menu__more" href="#"><a class="left-menu__to-category" href="#">
+        <div class="left-menu__icon left-menu__icon_nav-more"></div></a>
+      <div class="left-menu__submenu left-menu__submenu_other"></div>
+    </div>
+  </div>
+  <div class="main-content">
+    <div class="desktop">
+      <div class="desktop__header">
+        <div class="desktop__filters">
+          <div class="desktop__toggle-wrapper">
+            <div class="toggle desktop__toggle">
+              <div class="toggle__item toggle__item_is-active">Все</div>
+              <div class="toggle__item">Мои</div>
+            </div>
+          </div>
+          <div class="desktop__types">
+            <div class="desktop__types-wrapper">
+              <div class="desktop__type">
+                <label class="checkbox checkbox_large">
+                  <input class="checkbox__input" type="checkbox"><span class="desktop__type-checkbox">
+                    <div class="desktop__type-marker" style="background-color:red;"></div></span>
+                  <div class="checkbox__text">Вылет</div>
+                </label>
+              </div>
+              <div class="desktop__type">
+                <label class="checkbox checkbox_large">
+                  <input class="checkbox__input" type="checkbox"><span class="desktop__type-checkbox">
+                    <div class="desktop__type-marker" style="background-color:red;"></div></span>
+                  <div class="checkbox__text">Прилет</div>
+                </label>
+              </div>
+              <div class="desktop__type">
+                <label class="checkbox checkbox_large">
+                  <input class="checkbox__input" type="checkbox"><span class="desktop__type-checkbox">
+                    <div class="desktop__type-marker" style="background-color:red;"></div></span>
+                  <div class="checkbox__text">Задачи</div>
+                </label>
+              </div>
+              <div class="desktop__type">
+                <label class="checkbox checkbox_large">
+                  <input class="checkbox__input" type="checkbox"><span class="desktop__type-checkbox">
+                    <div class="desktop__type-marker" style="background-color:red;"></div></span>
+                  <div class="checkbox__text">День рождения</div>
+                </label>
+              </div>
+              <div class="desktop__type">
+                <label class="checkbox checkbox_large">
+                  <input class="checkbox__input" type="checkbox"><span class="desktop__type-checkbox">
+                    <div class="desktop__type-marker" style="background-color:red;"></div></span>
+                  <div class="checkbox__text">Окончание загранпаспорта</div>
+                </label>
+              </div>
+              <div class="desktop__type">
+                <label class="checkbox checkbox_large">
+                  <input class="checkbox__input" type="checkbox"><span class="desktop__type-checkbox">
+                    <div class="desktop__type-marker" style="background-color:red;"></div></span>
+                  <div class="checkbox__text">Окончание договора</div>
+                </label>
+              </div>
+              <div class="desktop__type">
+                <label class="checkbox checkbox_large">
+                  <input class="checkbox__input" type="checkbox"><span class="desktop__type-checkbox">
+                    <div class="desktop__type-marker" style="background-color:red;"></div></span>
+                  <div class="checkbox__text">Платежи</div>
+                </label>
+              </div>
+              <div class="desktop__type">
+                <label class="checkbox checkbox_large">
+                  <input class="checkbox__input" type="checkbox"><span class="desktop__type-checkbox">
+                    <div class="desktop__type-marker" style="background-color:red;"></div></span>
+                  <div class="checkbox__text">Док-ты на визу</div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="desktop__settings">
+            <div class="set-sequence">
+              <div class="set-sequence__icon"></div>
+              <div class="set-sequence__modal">
+                <div class="set-sequence__title">Отображать пункты</div>
+                <div class="set-sequence__list">
+                  <div class="set-sequence__item">
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"><span></span>
+                      <div class="checkbox__text set-sequence__text">Вылет</div>
+                    </label>
+                  </div>
+                  <div class="set-sequence__item">
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"><span></span>
+                      <div class="checkbox__text set-sequence__text">Прилет</div>
+                    </label>
+                  </div>
+                  <div class="set-sequence__item">
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"><span></span>
+                      <div class="checkbox__text set-sequence__text">Задачи</div>
+                    </label>
+                  </div>
+                  <div class="set-sequence__item">
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"><span></span>
+                      <div class="checkbox__text set-sequence__text">День рождения</div>
+                    </label>
+                  </div>
+                  <div class="set-sequence__item">
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"><span></span>
+                      <div class="checkbox__text set-sequence__text">Окончание загранпаспорта</div>
+                    </label>
+                  </div>
+                  <div class="set-sequence__item">
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"><span></span>
+                      <div class="checkbox__text set-sequence__text">Окончание договора</div>
+                    </label>
+                  </div>
+                  <div class="set-sequence__item">
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"><span></span>
+                      <div class="checkbox__text set-sequence__text">Платежи</div>
+                    </label>
+                  </div>
+                  <div class="set-sequence__item">
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"><span></span>
+                      <div class="checkbox__text set-sequence__text">Док-ты на визу</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop__tabs">
+            <div class="tabs tabs_without-border">
+              <div class="tabs__wrapper"><a class="tabs__tab tabs__tab_active desktop__tabs-tab" href="#">Рабочий стол</a><a class="tabs__tab desktop__tabs-tab" href="#">Статистика</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="desktop__calender">
+          <div class="calendar-hor">
+            <div class="calendar-hor__wrapper">
+              <div class="calendar-hor__drag">
+                <div class="calendar-hor__item">
+                  <div class="calendar-hor__month">
+                    <div class="calendar-hor__note">2017</div>
+                    <div class="calendar-hor__text">Январь</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пн</div>
+                    <div class="calendar-hor__text">1</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Вт</div>
+                    <div class="calendar-hor__text">2</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Ср</div>
+                    <div class="calendar-hor__text">3</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Чт</div>
+                    <div class="calendar-hor__text">4</div>
+                    <div class="calendar-hor__markers">
+                      <div class="calendar-hor__marker" style="background-color:red;"></div>
+                      <div class="calendar-hor__marker" style="background-color:blue;"></div>
+                    </div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пт</div>
+                    <div class="calendar-hor__text">5</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Сб</div>
+                    <div class="calendar-hor__text">6</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Вс</div>
+                    <div class="calendar-hor__text">7</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пн</div>
+                    <div class="calendar-hor__text">8</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Вт</div>
+                    <div class="calendar-hor__text">9</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Ср</div>
+                    <div class="calendar-hor__text">10</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Чт</div>
+                    <div class="calendar-hor__text">11</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пт</div>
+                    <div class="calendar-hor__text">12</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Сб</div>
+                    <div class="calendar-hor__text">13</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Вс</div>
+                    <div class="calendar-hor__text">14</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пн</div>
+                    <div class="calendar-hor__text">15</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Вт</div>
+                    <div class="calendar-hor__text">16</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Ср</div>
+                    <div class="calendar-hor__text">17</div>
+                  </div>
+                  <div class="calendar-hor__day calendar-hor__day_current">
+                    <div class="calendar-hor__note">Чт</div>
+                    <div class="calendar-hor__text">18</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пт</div>
+                    <div class="calendar-hor__text">19</div>
+                  </div>
+                  <div class="calendar-hor__day calendar-hor__day_chosen">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Сб</div>
+                    <div class="calendar-hor__text">20</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Вс</div>
+                    <div class="calendar-hor__text">21</div>
+                  </div>
+                </div>
+                <div class="calendar-hor__item">
+                  <div class="calendar-hor__month">
+                    <div class="calendar-hor__note">2017</div>
+                    <div class="calendar-hor__text">Февраль</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пн</div>
+                    <div class="calendar-hor__text">1</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Вт</div>
+                    <div class="calendar-hor__text">2</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Ср</div>
+                    <div class="calendar-hor__text">3</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Чт</div>
+                    <div class="calendar-hor__text">4</div>
+                    <div class="calendar-hor__markers">
+                      <div class="calendar-hor__marker" style="background-color:red;"></div>
+                      <div class="calendar-hor__marker" style="background-color:blue;"></div>
+                    </div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пт</div>
+                    <div class="calendar-hor__text">5</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Сб</div>
+                    <div class="calendar-hor__text">6</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Вс</div>
+                    <div class="calendar-hor__text">7</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пн</div>
+                    <div class="calendar-hor__text">8</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Вт</div>
+                    <div class="calendar-hor__text">9</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Ср</div>
+                    <div class="calendar-hor__text">10</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Чт</div>
+                    <div class="calendar-hor__text">11</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пт</div>
+                    <div class="calendar-hor__text">12</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Сб</div>
+                    <div class="calendar-hor__text">13</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Вс</div>
+                    <div class="calendar-hor__text">14</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пн</div>
+                    <div class="calendar-hor__text">15</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Вт</div>
+                    <div class="calendar-hor__text">16</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Ср</div>
+                    <div class="calendar-hor__text">17</div>
+                  </div>
+                  <div class="calendar-hor__day calendar-hor__day_current">
+                    <div class="calendar-hor__note">Чт</div>
+                    <div class="calendar-hor__text">18</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пт</div>
+                    <div class="calendar-hor__text">19</div>
+                  </div>
+                  <div class="calendar-hor__day calendar-hor__day_chosen">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Сб</div>
+                    <div class="calendar-hor__text">20</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Вс</div>
+                    <div class="calendar-hor__text">21</div>
+                  </div>
+                </div>
+                <div class="calendar-hor__item">
+                  <div class="calendar-hor__month">
+                    <div class="calendar-hor__note">2017</div>
+                    <div class="calendar-hor__text">Март</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пн</div>
+                    <div class="calendar-hor__text">1</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Вт</div>
+                    <div class="calendar-hor__text">2</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Ср</div>
+                    <div class="calendar-hor__text">3</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Чт</div>
+                    <div class="calendar-hor__text">4</div>
+                    <div class="calendar-hor__markers">
+                      <div class="calendar-hor__marker" style="background-color:red;"></div>
+                      <div class="calendar-hor__marker" style="background-color:blue;"></div>
+                    </div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пт</div>
+                    <div class="calendar-hor__text">5</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Сб</div>
+                    <div class="calendar-hor__text">6</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Вс</div>
+                    <div class="calendar-hor__text">7</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пн</div>
+                    <div class="calendar-hor__text">8</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Вт</div>
+                    <div class="calendar-hor__text">9</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Ср</div>
+                    <div class="calendar-hor__text">10</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Чт</div>
+                    <div class="calendar-hor__text">11</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пт</div>
+                    <div class="calendar-hor__text">12</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Сб</div>
+                    <div class="calendar-hor__text">13</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Вс</div>
+                    <div class="calendar-hor__text">14</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пн</div>
+                    <div class="calendar-hor__text">15</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Вт</div>
+                    <div class="calendar-hor__text">16</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Ср</div>
+                    <div class="calendar-hor__text">17</div>
+                  </div>
+                  <div class="calendar-hor__day calendar-hor__day_current">
+                    <div class="calendar-hor__note">Чт</div>
+                    <div class="calendar-hor__text">18</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пт</div>
+                    <div class="calendar-hor__text">19</div>
+                  </div>
+                  <div class="calendar-hor__day calendar-hor__day_chosen">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Сб</div>
+                    <div class="calendar-hor__text">20</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Вс</div>
+                    <div class="calendar-hor__text">21</div>
+                  </div>
+                </div>
+                <div class="calendar-hor__item">
+                  <div class="calendar-hor__month">
+                    <div class="calendar-hor__note">2017</div>
+                    <div class="calendar-hor__text">Апрель</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пн</div>
+                    <div class="calendar-hor__text">1</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Вт</div>
+                    <div class="calendar-hor__text">2</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Ср</div>
+                    <div class="calendar-hor__text">3</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Чт</div>
+                    <div class="calendar-hor__text">4</div>
+                    <div class="calendar-hor__markers">
+                      <div class="calendar-hor__marker" style="background-color:red;"></div>
+                      <div class="calendar-hor__marker" style="background-color:blue;"></div>
+                    </div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пт</div>
+                    <div class="calendar-hor__text">5</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Сб</div>
+                    <div class="calendar-hor__text">6</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Вс</div>
+                    <div class="calendar-hor__text">7</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пн</div>
+                    <div class="calendar-hor__text">8</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Вт</div>
+                    <div class="calendar-hor__text">9</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Ср</div>
+                    <div class="calendar-hor__text">10</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Чт</div>
+                    <div class="calendar-hor__text">11</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пт</div>
+                    <div class="calendar-hor__text">12</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Сб</div>
+                    <div class="calendar-hor__text">13</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Вс</div>
+                    <div class="calendar-hor__text">14</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пн</div>
+                    <div class="calendar-hor__text">15</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Вт</div>
+                    <div class="calendar-hor__text">16</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Ср</div>
+                    <div class="calendar-hor__text">17</div>
+                  </div>
+                  <div class="calendar-hor__day calendar-hor__day_current">
+                    <div class="calendar-hor__note">Чт</div>
+                    <div class="calendar-hor__text">18</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пт</div>
+                    <div class="calendar-hor__text">19</div>
+                  </div>
+                  <div class="calendar-hor__day calendar-hor__day_chosen">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Сб</div>
+                    <div class="calendar-hor__text">20</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Вс</div>
+                    <div class="calendar-hor__text">21</div>
+                  </div>
+                </div>
+                <div class="calendar-hor__item">
+                  <div class="calendar-hor__month">
+                    <div class="calendar-hor__note">2017</div>
+                    <div class="calendar-hor__text">Июнь</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пн</div>
+                    <div class="calendar-hor__text">1</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Вт</div>
+                    <div class="calendar-hor__text">2</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Ср</div>
+                    <div class="calendar-hor__text">3</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Чт</div>
+                    <div class="calendar-hor__text">4</div>
+                    <div class="calendar-hor__markers">
+                      <div class="calendar-hor__marker" style="background-color:red;"></div>
+                      <div class="calendar-hor__marker" style="background-color:blue;"></div>
+                    </div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пт</div>
+                    <div class="calendar-hor__text">5</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Сб</div>
+                    <div class="calendar-hor__text">6</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Вс</div>
+                    <div class="calendar-hor__text">7</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пн</div>
+                    <div class="calendar-hor__text">8</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Вт</div>
+                    <div class="calendar-hor__text">9</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Ср</div>
+                    <div class="calendar-hor__text">10</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Чт</div>
+                    <div class="calendar-hor__text">11</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пт</div>
+                    <div class="calendar-hor__text">12</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Сб</div>
+                    <div class="calendar-hor__text">13</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Вс</div>
+                    <div class="calendar-hor__text">14</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пн</div>
+                    <div class="calendar-hor__text">15</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Вт</div>
+                    <div class="calendar-hor__text">16</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Ср</div>
+                    <div class="calendar-hor__text">17</div>
+                  </div>
+                  <div class="calendar-hor__day calendar-hor__day_current">
+                    <div class="calendar-hor__note">Чт</div>
+                    <div class="calendar-hor__text">18</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note">Пт</div>
+                    <div class="calendar-hor__text">19</div>
+                  </div>
+                  <div class="calendar-hor__day calendar-hor__day_chosen">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Сб</div>
+                    <div class="calendar-hor__text">20</div>
+                  </div>
+                  <div class="calendar-hor__day">
+                    <div class="calendar-hor__note calendar-hor__note_weekend">Вс</div>
+                    <div class="calendar-hor__text">21</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column-grid desktop__columns dragscroll">
+        <div class="column-grid__wrapper column-grid__wrapper_default">
+          <div class="column-grid__col">
+            <div class="column-grid__col-header">
+              <div class="column-grid__name">Понедельник</div>
+              <div class="column-grid__note">8 марта</div>
+            </div>
+            <div class="column-grid__col-item">
+              <div class="marker marker_departure marker_margin">вылет 2</div>
+              <div class="desktop-col-item"><a class="desktop-col-item__title" href="#">Владимир Александрович Седунов</a>
+                <div class="desktop-col-item__note">Тайланд,<a href="#">заявка №203-2017</a></div>
+              </div>
+              <div class="desktop-col-item"><a class="desktop-col-item__title" href="#">Александр Эдуардович Сабуров</a>
+                <div class="desktop-col-item__note">Япония,<a href="#">заявка №203-2017</a></div>
+              </div>
+            </div>
+            <div class="column-grid__col-item">
+              <div class="marker marker_task marker_margin">задачи</div>
+              <div class="desktop-col-item"><a class="desktop-col-item__title" href="#">Позвонить 10 августа в 17:00</a>
+                <div class="desktop-col-item__note">Средний, ответственный Алексей</div>
+                <div class="desktop-col-item__description">Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил</div>
+              </div>
+            </div>
+          </div>
+          <div class="column-grid__col">
+            <div class="column-grid__col-header">
+              <div class="column-grid__name">Вторник</div>
+              <div class="column-grid__note">9 марта</div>
+            </div>
+            <div class="column-grid__col-item">
+              <div class="marker marker_birthday marker_margin">день рождения 2</div>
+              <div class="desktop-col-item"><a class="desktop-col-item__title" href="#">Александр Сабуров</a>
+                <div class="desktop-col-item__note">Клиент компании</div>
+              </div>
+              <div class="desktop-col-item"><a class="desktop-col-item__title" href="#">Ивашкин Станислав Олегович</a>
+                <div class="desktop-col-item__note">Обращался и не купил</div>
+              </div>
+            </div>
+            <div class="column-grid__col-item">
+              <div class="marker marker_passport marker_margin">окончание загранпаспорта</div>
+              <div class="desktop-col-item"><a class="desktop-col-item__title" href="#">Петросян Виктор Николаевич</a>
+                <div class="desktop-col-item__note">Клиент компании</div>
+              </div>
+            </div>
+          </div>
+          <div class="column-grid__col">
+            <div class="column-grid__col-header">
+              <div class="column-grid__name">Среда</div>
+              <div class="column-grid__note">10 марта</div>
+            </div>
+            <div class="column-grid__col-item">
+              <div class="marker marker_contract marker_margin">окончание договора</div>
+              <div class="desktop-col-item"><a class="desktop-col-item__title" href="#">Пегас туристик</a>
+                <div class="desktop-col-item__note">Срок действия - до 04.04.2017</div>
+              </div>
+            </div>
+            <div class="column-grid__col-item">
+              <div class="marker marker_payment marker_margin">платежи 10</div>
+              <div class="desktop-col-item"><a class="desktop-col-item__title" href="#">Заявка №46-2017, 71 000 руб.</a>
+                <div class="desktop-col-item__note">Клиент компании</div>
+              </div>
+            </div>
+          </div>
+          <div class="column-grid__col">
+            <div class="column-grid__col-header">
+              <div class="column-grid__name">Четверг</div>
+              <div class="column-grid__note">11 марта</div>
+            </div>
+            <div class="column-grid__col-item">
+              <div class="marker marker_docs marker_margin">док-ты на визу</div>
+              <div class="desktop-col-item"><a class="desktop-col-item__title" href="#">Заявка №46-2017, Испания</a>
+                <div class="desktop-col-item__note"><a href="#">Безумов Константин Николаевич</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="column-grid__col">
+            <div class="column-grid__col-header">
+              <div class="column-grid__name">Пятница</div>
+              <div class="column-grid__note">12 марта</div>
+            </div>
+            <div class="column-grid__col-item">
+              <div class="marker marker_departure marker_margin">вылет 2</div>
+              <div class="desktop-col-item"><a class="desktop-col-item__title" href="#">Владимир Александрович Седунов</a>
+                <div class="desktop-col-item__note">Тайланд,<a href="#">заявка №203-2017</a></div>
+              </div>
+              <div class="desktop-col-item"><a class="desktop-col-item__title" href="#">Александр Эдуардович Сабуров</a>
+                <div class="desktop-col-item__note">Япония,<a href="#">заявка №203-2017</a></div>
+              </div>
+            </div>
+            <div class="column-grid__col-item">
+              <div class="marker marker_task marker_margin">задачи</div>
+              <div class="desktop-col-item"><a class="desktop-col-item__title" href="#">Позвонить 10 августа в 17:00</a>
+                <div class="desktop-col-item__note">Средний, ответственный Алексей</div>
+                <div class="desktop-col-item__description">Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил</div>
+              </div>
+            </div>
+          </div>
+          <div class="column-grid__col">
+            <div class="column-grid__col-header">
+              <div class="column-grid__name">Суббота</div>
+              <div class="column-grid__note">13 марта</div>
+            </div>
+            <div class="column-grid__col-item">
+              <div class="marker marker_birthday marker_margin">день рождения 2</div>
+              <div class="desktop-col-item"><a class="desktop-col-item__title" href="#">Александр Сабуров</a>
+                <div class="desktop-col-item__note">Клиент компании</div>
+              </div>
+              <div class="desktop-col-item"><a class="desktop-col-item__title" href="#">Ивашкин Станислав Олегович</a>
+                <div class="desktop-col-item__note">Обращался и не купил</div>
+              </div>
+            </div>
+            <div class="column-grid__col-item">
+              <div class="marker marker_passport marker_margin">окончание загранпаспорта</div>
+              <div class="desktop-col-item"><a class="desktop-col-item__title" href="#">Петросян Виктор Николаевич</a>
+                <div class="desktop-col-item__note">Клиент компании</div>
+              </div>
+            </div>
+          </div>
+          <div class="column-grid__col">
+            <div class="column-grid__col-header">
+              <div class="column-grid__name">Воскресенье</div>
+              <div class="column-grid__note">14 марта</div>
+            </div>
+            <div class="column-grid__col-item">
+              <div class="marker marker_contract marker_margin">окончание договора</div>
+              <div class="desktop-col-item"><a class="desktop-col-item__title" href="#">Пегас туристик</a>
+                <div class="desktop-col-item__note">Срок действия - до 04.04.2017</div>
+              </div>
+            </div>
+            <div class="column-grid__col-item">
+              <div class="marker marker_payment marker_margin">платежи 10</div>
+              <div class="desktop-col-item"><a class="desktop-col-item__title" href="#">Заявка №46-2017, 71 000 руб.</a>
+                <div class="desktop-col-item__note">Клиент компании</div>
+              </div>
+            </div>
+          </div>
+          <div class="column-grid__col">
+            <div class="column-grid__col-header">
+              <div class="column-grid__name">Понедельник</div>
+              <div class="column-grid__note">15 марта</div>
+            </div>
+            <div class="column-grid__col-item">
+              <div class="marker marker_docs marker_margin">док-ты на визу</div>
+              <div class="desktop-col-item"><a class="desktop-col-item__title" href="#">Заявка №46-2017, Испания</a>
+                <div class="desktop-col-item__note"><a href="#">Безумов Константин Николаевич</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/min.libraries.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>

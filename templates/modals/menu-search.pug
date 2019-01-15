@@ -1,0 +1,174 @@
+.menu-modal
+  .menu-modal__arrow
+  .menu-modal__wrapper.menu-modal_grey(id="menu-modal-search")
+    label.search-field.menu-modal__search(for="main-search")
+      .search-field__wrapper
+        input.search-field__input(placeholder="Что будем искать?", id="main-search")
+    .menu-modal__search-result.scrollable
+      .menu-modal__note Поиск идет по разделам:
+      .divided-list.divided-list__switchable.divided-list_first-border
+        .divided-list__item
+          .divided-list__title.divided-list__title_show
+            | Контакты 2 найдено
+          .divided-list__hidden
+            .user-item
+              .user-item__top
+                .user-item__top-text
+                  .user-item__title Позвонить 10 августа в 17:00
+                  .user-item__note 
+                    | Средний приоритет, ответственный 
+                    a(href="#").user-item__responsible Алексей
+              .user-item__description Позвонить Александру Сабурову и узнать что там по-поводу Японии он решил.
+            .user-item
+              .user-item__top
+                .user-item__top-text
+                  .user-item__title Позвонить 10 августа в 17:00
+                  .user-item__note 
+                    | Средний приоритет, ответственный 
+                    a(href="#").user-item__responsible Алексей
+              .user-item__description Позвонить Александру Сабурову и узнать что там по-поводу Японии он решил.
+        .divided-list__item
+          .divided-list__title.divided-list__title_show
+            | Компании 1 найдена
+          .divided-list__hidden
+            .user-item
+              .user-item__top
+                .user-item__top-text
+                  .user-item__title Позвонить 10 августа в 17:00
+                  .user-item__note 
+                    | Средний приоритет, ответственный 
+                    a(href="#").user-item__responsible Алексей
+              .user-item__description Позвонить Александру Сабурову и узнать что там по-поводу Японии он решил.
+        .divided-list__item
+          .divided-list__title
+            | Задачи
+        .divided-list__item
+          .divided-list__title.divided-list__title_show
+            | Заявки 1 найдена
+          .divided-list__hidden
+            .user-item
+              .user-item__top
+                .user-item__top-text
+                  .user-item__title Позвонить 10 августа в 17:00
+                  .user-item__note 
+                    | Средний приоритет, ответственный 
+                    a(href="#").user-item__responsible Алексей
+              .user-item__description Позвонить Александру Сабурову и узнать что там по-поводу Японии он решил.
+  .menu-modal__wrapper.menu-modal__wrapper_padding.scrollable(id="menu-modal-notifications")
+    .menu-modal__title Системные напоминания
+    .toggle.menu-modal__toggle
+      .toggle__item.header__toggle-item.toggle__item_is-active Все 10
+      .toggle__item.header__toggle-item Новое 2
+      .toggle__item.header__toggle-item Прочитанное 3
+    .divided-list.divided-list_without-last
+      .divided-list__item
+        .user-item
+          .user-item__marker
+            .marker.marker_task день рождения
+          .user-item__top
+            .user-item__top-text
+              .user-item__title
+                a(href="#").user-item__link Александр Сабуров
+                | , 20 августа
+              .user-item__note 
+                | Средний приоритет, ответственный 
+                a(href="#").user-item__responsible Алексей
+      .divided-list__item
+        .user-item
+          .user-item__marker
+            .marker.marker_payment просрочка платежа
+          .user-item__top
+            .user-item__top-text
+              .user-item__title
+                | 20 000 руб. на 20 августа
+              .user-item__note 
+                | от Александра Сабурова,  
+                a(href="#").user-item__responsible предзаявка 2055-22
+  .menu-modal__wrapper.menu-modal__wrapper_padding.scrollable(id="menu-modal-tasks")
+    .menu-modal__title Список задач
+    .toggle.menu-modal__toggle
+      .toggle__item.header__toggle-item.toggle__item_is-active Сегодня 2
+      .toggle__item.header__toggle-item Завтра 2
+      .toggle__item.header__toggle-item Неделя 2
+      .toggle__item.header__toggle-item Просроч. 2
+    .divided-list.divided-list_without-last
+      each val in ['Позвонить Александру Сабурову и узнать', 'Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил', 'Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил']
+        .divided-list__item
+          .user-item
+            .user-item__marker
+              .marker.marker_task задача
+            .user-item__top
+              .user-item__top-text
+                .user-item__title Позвонить 10 августа в 17:00
+                .user-item__note 
+                  | Средний приоритет, ответственный 
+                  a(href="#").user-item__responsible Алексей
+              .user-item__check
+                label.checkbox.user-item__checkbox
+                  input(type="checkbox").checkbox__input
+                  span
+            .user-item__description= val
+      each val in ['Позвонить Александру Сабурову и узнать', 'Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил', 'Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил']
+        .divided-list__item
+          .user-item
+            .user-item__marker
+              .marker.marker_task задача
+            .user-item__top
+              .user-item__top-text
+                .user-item__title Позвонить 10 августа в 17:00
+                .user-item__note 
+                  | Средний приоритет, ответственный 
+                  a(href="#").user-item__responsible Алексей
+              .user-item__check
+                label.checkbox.user-item__checkbox
+                  input(type="checkbox").checkbox__input
+                  span
+            .user-item__description= val
+      each val in ['Позвонить Александру Сабурову и узнать', 'Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил', 'Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил']
+        .divided-list__item
+          .user-item
+            .user-item__marker
+              .marker.marker_task задача
+            .user-item__top
+              .user-item__top-text
+                .user-item__title Позвонить 10 августа в 17:00
+                .user-item__note 
+                  | Средний приоритет, ответственный 
+                  a(href="#").user-item__responsible Алексей
+              .user-item__check
+                label.checkbox.user-item__checkbox
+                  input(type="checkbox").checkbox__input
+                  span
+            .user-item__description= val
+      each val in ['Позвонить Александру Сабурову и узнать', 'Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил', 'Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил']
+        .divided-list__item
+          .user-item
+            .user-item__marker
+              .marker.marker_task задача
+            .user-item__top
+              .user-item__top-text
+                .user-item__title Позвонить 10 августа в 17:00
+                .user-item__note 
+                  | Средний приоритет, ответственный 
+                  a(href="#").user-item__responsible Алексей
+              .user-item__check
+                label.checkbox.user-item__checkbox
+                  input(type="checkbox").checkbox__input
+                  span
+            .user-item__description= val
+      each val in ['Позвонить Александру Сабурову и узнать', 'Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил', 'Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил']
+        .divided-list__item
+          .user-item
+            .user-item__marker
+              .marker.marker_task задача
+            .user-item__top
+              .user-item__top-text
+                .user-item__title Позвонить 10 августа в 17:00
+                .user-item__note 
+                  | Средний приоритет, ответственный 
+                  a(href="#").user-item__responsible Алексей
+              .user-item__check
+                label.checkbox.user-item__checkbox
+                  input(type="checkbox").checkbox__input
+                  span
+            .user-item__description= val

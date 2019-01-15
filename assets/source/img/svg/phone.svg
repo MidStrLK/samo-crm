@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="14px" viewBox="0 0 10 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>phone</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Предзаявки" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="предзаявки:выбрана-правая-часть,-расширяющаяся,-большая" transform="translate(-1145.000000, -914.000000)" fill="#000000">
+            <g id="content" transform="translate(70.000000, 6.000000)">
+                <g id="right:wide" transform="translate(419.000000, 114.000000)">
+                    <g id="customer" transform="translate(24.000000, 72.000000)">
+                        <g id="table" transform="translate(0.000000, 688.000000)">
+                            <g id="2" transform="translate(1.000000, 34.000000)">
+                                <path d="M640,0 L632,0 C631.4,0 631,0.4 631,1 L631,13 C631,13.6 631.4,14 632,14 L640,14 C640.6,14 641,13.6 641,13 L641,1 C641,0.4 640.6,0 640,0 L640,0 Z M639,12 L633,12 L633,2 L639,2 L639,12 Z M636,11 C636.552285,11 637,10.5522847 637,10 C637,9.44771525 636.552285,9 636,9 C635.447715,9 635,9.44771525 635,10 C635,10.5522847 635.447715,11 636,11 Z" id="phone"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

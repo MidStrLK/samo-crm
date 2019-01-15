@@ -1,0 +1,98 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,700');
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+  background-image:url(../img/body_pattern.png);
+  font: 13px/1.3 "Ubuntu", "Arial", sans-serif;
+}
+
+input, textarea, select, button {
+  font-family: "Ubuntu", "Arial", sans-serif;
+}
+
+b {
+  font-weight: 500;
+}
+
+.dragscroll {
+  overflow: auto;
+  cursor : grab;
+}
+
+
+/* вспомогательные сущности */
+@import 'variables.pcss';
+@import 'reset.pcss';
+@import 'useful-mixins.pcss';
+
+/* поля форм*/
+@import 'base/field.pcss';
+@import 'base/field-list.pcss';
+@import 'base/field-cols.pcss';
+@import 'base/editable-inputs.pcss';
+@import 'base/select.pcss';
+
+/* универсальные элементы */
+@import 'base/checkbox.pcss';
+@import 'base/radio.pcss';
+@import 'base/svg-icons.pcss';
+@import 'base/buttons.pcss';
+@import 'base/toggle.pcss';
+@import 'base/divided-list.pcss';
+@import 'base/arrow-link.pcss';
+@import 'base/marker.pcss';
+@import 'base/user-item.pcss';
+@import 'base/tabs.pcss';
+@import 'base/progress-bar.pcss';
+@import 'base/text.pcss';
+@import 'base/num-stats.pcss';
+@import 'base/data-list.pcss';
+@import 'base/plain-table.pcss';
+@import 'base/icon.pcss';
+@import 'base/line-graph.pcss';
+@import 'base/window.pcss';
+@import 'base/hover-menu.pcss';
+
+/* структурообразующие блоки */
+@import 'blocks/left-menu.pcss';
+@import 'blocks/main-content.pcss';
+@import 'blocks/column-grid.pcss';
+@import 'blocks/layout.pcss';
+@import 'blocks/main-table.pcss';
+@import 'blocks/kanban.pcss';
+@import 'blocks/charts-layout.pcss';
+
+/* модальные окна */
+@import 'modals/menu-modal.pcss';
+@import 'modals/menu-notify.pcss';
+@import 'modals/menu-task-list.pcss';
+@import 'modals/modal.pcss';
+@import 'modals/modal-target.pcss';
+@import 'modals/blackout.pcss';
+
+/* части основных разделов */
+@import 'blocks/header.pcss';
+@import 'blocks/quick-filters.pcss';
+@import 'blocks/search-field.pcss';
+@import 'blocks/set-sequence.pcss';
+@import 'blocks/quick-creation.pcss';
+@import 'blocks/table-quick-view.pcss';
+@import 'blocks/status-bar.pcss';
+@import 'blocks/search-filters.pcss';
+
+/* страницы */
+@import 'blocks/desktop.pcss';
+@import 'blocks/desktop-col-item.pcss';
+@import 'blocks/calendar-hor.pcss';
+
+/* стили для сторонних библиотек */
+@import 'libs/perfect-scrollbar.min.pcss';
+
+/* элементы для разработки */
+@import 'dev/layout.pcss';

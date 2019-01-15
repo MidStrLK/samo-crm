@@ -1,0 +1,171 @@
+.layout.layout_active(data-tab="table")
+  .layout__table
+    .main-table
+      .main-table__selected-overlay
+        span.main-table__selected-text 
+          | Выбраны 
+          span.text.text_green.main-table__selected-count 
+            span 2 
+            |  предзаявки: 
+        a.pseudo.main-table__selected-link(href="#") Создать рассылку
+        a.pseudo(href="#") В архив
+        a.pseudo.pseudo_red.main-table__selected-delete(href="#") Удалить
+      .set-sequence.set-sequence_abs.main-table__set-sequence
+        .set-sequence__icon.set-sequence__icon_grey
+        .set-sequence__modal
+          .set-sequence__title Параметры таблицы:
+          .set-sequence__list
+            - 
+              var arr = [
+                {text: "Номер", col: "number"},
+                {text: "Клиент", col: "client"},
+                {text: "Страна", col: "country"},
+                {text: "Заезд", col: "arrive"},
+                {text: "Цена до", col: "price"},
+                {text: "Реклама", col: "advert"},
+                {text: "Статус", col: "status"},
+                {text: "Задачи", col: "task"},
+              ]
+            each val in arr
+              .set-sequence__item
+                .icon.icon__draggable.set-sequence__marker
+                label.checkbox
+                  input(type="checkbox", name=val.col, checked).checkbox__input
+                  span
+                  div.checkbox__text.set-sequence__text= val.text
+      .main-table__thead
+        .main-table__thead-row
+          .main-table__thead-item(data-min-width="45", data-immortal="true")
+            label.checkbox.checkbox_large.main-table__check
+              input(type="checkbox").checkbox__input
+              span
+          .main-table__thead-item(data-min-width="60", data-col-name="number") №
+          .main-table__thead-item(data-min-width="130", data-col-name="client") Клиент
+          .main-table__thead-item(data-min-width="130", data-col-name="country") Страна
+          .main-table__thead-item(data-min-width="110", data-col-name="arrive") 
+            a.arrow-link.arrow-link_grey(href="#") 
+              span.arrow-link__wrapper Заезд
+          .main-table__thead-item(data-min-width="120", data-col-name="price") Цена до
+          .main-table__thead-item(data-min-width="120", data-col-name="advert") Реклама
+          .main-table__thead-item(data-min-width="140", data-col-name="status") Статус
+          .main-table__thead-item(data-min-width="140", data-col-name="task") Задачи
+          .main-table__thead-item.main-table__settings(data-min-width="23", data-immortal="true")
+      .main-table__tbody.scrollable
+        .main-table__tbody-wrapper
+          .main-table__tbody-colgroup
+            .main-table__tbody-col
+            .main-table__tbody-col
+            .main-table__tbody-col
+            .main-table__tbody-col
+            .main-table__tbody-col
+            .main-table__tbody-col
+            .main-table__tbody-col
+            .main-table__tbody-col
+            .main-table__tbody-col
+            .main-table__tbody-col
+          .main-table__tbody-row
+            .main-table__tbody-item
+              label.checkbox.checkbox_large.main-table__check
+                input(type="checkbox").checkbox__input
+                span
+            .main-table__tbody-item
+              .main-table__text 1-17
+              .main-table__note 25.11
+            .main-table__tbody-item
+              .main-table__text 
+                a(href="#") Александр Сабуров
+              .main-table__note Особый
+            .main-table__tbody-item
+              .main-table__text Япония
+            .main-table__tbody-item
+              .main-table__text 20.12.17
+            .main-table__tbody-item
+              .main-table__text 100 000 руб.
+            .main-table__tbody-item
+              .main-table__text Facebook
+              .main-table__note соц. сети
+            .main-table__tbody-item
+              .main-table__progress
+                .progress-bar
+                  .progress-bar__line(style={"width": "45%"})
+                  .progress-bar__base
+              .main-table__note Документы
+            .main-table__tbody-item
+              .main-table__text Есть на 25.12.11
+            .main-table__tbody-item.main-table__arrow
+          .main-table__tbody-row
+            .main-table__tbody-item
+              label.checkbox.checkbox_large.main-table__check
+                input(type="checkbox").checkbox__input
+                span
+            .main-table__tbody-item
+              .main-table__text 1-17
+              .main-table__note 25.11
+            .main-table__tbody-item
+              .main-table__text 
+                a(href="#") Александр Сабуров
+              .main-table__note Особый
+            .main-table__tbody-item
+              .main-table__text Япония
+            .main-table__tbody-item
+              .main-table__text 20.12.17
+            .main-table__tbody-item
+              .main-table__text 100 000 руб.
+            .main-table__tbody-item
+              .main-table__text Facebook
+              .main-table__note соц. сети
+            .main-table__tbody-item
+              .main-table__progress
+                .progress-bar
+                  .progress-bar__line(style={"width": "45%"})
+                  .progress-bar__base
+              .main-table__note Документы
+            .main-table__tbody-item
+              .main-table__text Есть на 25.12.11
+            .main-table__tbody-item.main-table__arrow
+          - var x = 0
+          while x < 30
+            .main-table__tbody-row
+              .main-table__tbody-item
+                label.checkbox.checkbox_large.main-table__check
+                  input(type="checkbox").checkbox__input
+                  span
+              .main-table__tbody-item
+                .main-table__text 1-17
+                .main-table__note 25.11
+              .main-table__tbody-item
+                .main-table__text 
+                  a(href="#") Александр Сабуров
+                .main-table__note Особый
+              .main-table__tbody-item
+                .main-table__text Япония
+              .main-table__tbody-item
+                .main-table__text 20.12.17
+              .main-table__tbody-item
+                .main-table__text 100 000 руб.
+              .main-table__tbody-item
+                .main-table__text Facebook
+                .main-table__note соц. сети
+              .main-table__tbody-item
+                .main-table__progress
+                  .progress-bar
+                    .progress-bar__line(style={"width": "45%"})
+                    .progress-bar__base
+                .main-table__note Документы
+              .main-table__tbody-item
+                .main-table__text Есть на 25.12.11
+              .main-table__tbody-item.main-table__arrow
+              - x++
+  .layout__view.layout__detail.layout__view_white.table-quick-view.scrollable
+    include ./quick-view/small
+    include ./quick-view/medium
+    include ./quick-view/large
+  .layout__view.layout__default.table-quick-view.scrollable
+    .table-quick-view__wrapper
+      .table-quick-view__block.table-quick-view__block_grey
+        .table-quick-view__statistic(id="view-stats-1")
+          | Блок статистики
+        .table-quick-view__statistic(id="view-stats-2")
+          | Блок статистики
+        .table-quick-view__statistic(id="view-stats-3")
+          | Блок статистики

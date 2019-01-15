@@ -1,0 +1,30 @@
+.header
+  .header__top
+    label.search-field.header__field(data-filters="prebid-filters")
+      .search-field__wrapper
+        input.search-field__input(placeholder="Поиск и фильтр по предзаявкам")
+    .header__view
+      .header__view-wrapper
+        .header__view-item.header__view-item_active(data-tab="table")
+          span.header__view-1
+        .header__view-item(data-tab="kanban")
+          span.header__view-2
+        .header__view-item(data-tab="graph")
+          span.header__view-3
+    .header__add
+      button.button.button_icon-add.header__button
+        span Создать предзаявку
+  .header__bottom
+    .header__bottom-wrapper
+      .toggle.header__toggle
+        .toggle__item.toggle__item_is-active Все
+        .toggle__item Мои
+      .header__divider
+      .quick-filters.header__quick-filters
+        each val in ['Без задач', 'Без общения', 'С просроченной задачей', 'Давно в работе', 'Отказники', 'В архиве']
+          .quick-filters__item
+            .quick-filters__wrapper
+              div.quick-filters__marker(style={backgroundColor:"#000"})
+              span.quick-filters__name= val
+              span.quick-filters__count 12
+              .icon.icon__draggable.quick-filters__draggable

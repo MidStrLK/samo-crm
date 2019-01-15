@@ -1,0 +1,252 @@
+extends layout/carcass.pug
+
+block content
+  div.main-content
+    .desktop
+      .desktop__header
+        .desktop__filters
+          .desktop__toggle-wrapper
+            .toggle.desktop__toggle
+              .toggle__item.toggle__item_is-active Все
+              .toggle__item Мои
+          .desktop__types
+            .desktop__types-wrapper
+              each val in ["Вылет", "Прилет", "Задачи", "День рождения", "Окончание загранпаспорта", "Окончание договора", "Платежи", "Док-ты на визу"]
+                .desktop__type
+                  label.checkbox.checkbox_large
+                    input(type="checkbox").checkbox__input
+                    span.desktop__type-checkbox
+                      .desktop__type-marker(style={"background-color":"red"})
+                    div.checkbox__text= val
+          .desktop__settings
+            .set-sequence
+              .set-sequence__icon
+              .set-sequence__modal
+                .set-sequence__title Отображать пункты
+                .set-sequence__list
+                  each val in ["Вылет", "Прилет", "Задачи", "День рождения", "Окончание загранпаспорта", "Окончание договора", "Платежи", "Док-ты на визу"]
+                    .set-sequence__item
+                      label.checkbox
+                        input(type="checkbox").checkbox__input
+                        span
+                        div.checkbox__text.set-sequence__text= val
+          .desktop__tabs
+            .tabs.tabs_without-border
+              .tabs__wrapper
+                a.tabs__tab.tabs__tab_active.desktop__tabs-tab(href="#") Рабочий стол
+                a.tabs__tab.desktop__tabs-tab(href="#") Статистика
+        .desktop__calender
+          .calendar-hor
+            .calendar-hor__wrapper
+              .calendar-hor__drag
+                each val in ["Январь", "Февраль", "Март", "Апрель", "Июнь"]
+                  .calendar-hor__item
+                    .calendar-hor__month
+                      .calendar-hor__note 2017
+                      .calendar-hor__text= val
+                    .calendar-hor__day
+                      .calendar-hor__note Пн
+                      .calendar-hor__text 1
+                    .calendar-hor__day
+                      .calendar-hor__note Вт
+                      .calendar-hor__text 2
+                    .calendar-hor__day
+                      .calendar-hor__note Ср
+                      .calendar-hor__text 3
+                    .calendar-hor__day
+                      .calendar-hor__note Чт
+                      .calendar-hor__text 4
+                      .calendar-hor__markers
+                        .calendar-hor__marker(style={"background-color":"red"})
+                        .calendar-hor__marker(style={"background-color":"blue"})
+                    .calendar-hor__day
+                      .calendar-hor__note Пт
+                      .calendar-hor__text 5
+                    .calendar-hor__day
+                      .calendar-hor__note.calendar-hor__note_weekend Сб
+                      .calendar-hor__text 6
+                    .calendar-hor__day
+                      .calendar-hor__note.calendar-hor__note_weekend Вс
+                      .calendar-hor__text 7
+                    .calendar-hor__day
+                      .calendar-hor__note Пн
+                      .calendar-hor__text 8
+                    .calendar-hor__day
+                      .calendar-hor__note Вт
+                      .calendar-hor__text 9
+                    .calendar-hor__day
+                      .calendar-hor__note Ср
+                      .calendar-hor__text 10
+                    .calendar-hor__day
+                      .calendar-hor__note Чт
+                      .calendar-hor__text 11
+                    .calendar-hor__day
+                      .calendar-hor__note Пт
+                      .calendar-hor__text 12
+                    .calendar-hor__day
+                      .calendar-hor__note.calendar-hor__note_weekend Сб
+                      .calendar-hor__text 13
+                    .calendar-hor__day
+                      .calendar-hor__note.calendar-hor__note_weekend Вс
+                      .calendar-hor__text 14
+                    .calendar-hor__day
+                      .calendar-hor__note Пн
+                      .calendar-hor__text 15
+                    .calendar-hor__day
+                      .calendar-hor__note Вт
+                      .calendar-hor__text 16
+                    .calendar-hor__day
+                      .calendar-hor__note Ср
+                      .calendar-hor__text 17
+                    .calendar-hor__day.calendar-hor__day_current
+                      .calendar-hor__note Чт
+                      .calendar-hor__text 18
+                    .calendar-hor__day
+                      .calendar-hor__note Пт
+                      .calendar-hor__text 19
+                    .calendar-hor__day.calendar-hor__day_chosen
+                      .calendar-hor__note.calendar-hor__note_weekend Сб
+                      .calendar-hor__text 20
+                    .calendar-hor__day
+                      .calendar-hor__note.calendar-hor__note_weekend Вс
+                      .calendar-hor__text 21
+      .column-grid.desktop__columns.dragscroll
+        .column-grid__wrapper.column-grid__wrapper_default
+          .column-grid__col
+            .column-grid__col-header
+              .column-grid__name Понедельник
+              .column-grid__note 8 марта
+            .column-grid__col-item
+              .marker.marker_departure.marker_margin вылет 2
+              .desktop-col-item
+                a.desktop-col-item__title(href="#") Владимир Александрович Седунов
+                div.desktop-col-item__note
+                  | Тайланд,
+                  a(href="#") заявка №203-2017
+              .desktop-col-item
+                a.desktop-col-item__title(href="#") Александр Эдуардович Сабуров
+                div.desktop-col-item__note
+                  | Япония,
+                  a(href="#") заявка №203-2017
+            .column-grid__col-item
+              .marker.marker_task.marker_margin задачи
+              .desktop-col-item
+                a.desktop-col-item__title(href="#") Позвонить 10 августа в 17:00
+                div.desktop-col-item__note
+                  | Средний, ответственный Алексей
+                div.desktop-col-item__description Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил
+          .column-grid__col
+            .column-grid__col-header
+              .column-grid__name Вторник
+              .column-grid__note 9 марта
+            .column-grid__col-item
+              .marker.marker_birthday.marker_margin день рождения 2
+              .desktop-col-item
+                a.desktop-col-item__title(href="#") Александр Сабуров
+                div.desktop-col-item__note
+                  | Клиент компании
+              .desktop-col-item
+                a.desktop-col-item__title(href="#") Ивашкин Станислав Олегович
+                div.desktop-col-item__note
+                  | Обращался и не купил
+            .column-grid__col-item
+              .marker.marker_passport.marker_margin окончание загранпаспорта
+              .desktop-col-item
+                a.desktop-col-item__title(href="#") Петросян Виктор Николаевич
+                div.desktop-col-item__note
+                  | Клиент компании
+          .column-grid__col
+            .column-grid__col-header
+              .column-grid__name Среда
+              .column-grid__note 10 марта
+            .column-grid__col-item
+              .marker.marker_contract.marker_margin окончание договора
+              .desktop-col-item
+                a.desktop-col-item__title(href="#") Пегас туристик
+                div.desktop-col-item__note
+                  | Срок действия - до 04.04.2017
+            .column-grid__col-item
+              .marker.marker_payment.marker_margin платежи 10
+              .desktop-col-item
+                a.desktop-col-item__title(href="#") Заявка №46-2017, 71 000 руб.
+                div.desktop-col-item__note
+                  | Клиент компании
+          .column-grid__col
+            .column-grid__col-header
+              .column-grid__name Четверг
+              .column-grid__note 11 марта
+            .column-grid__col-item
+              .marker.marker_docs.marker_margin док-ты на визу
+              .desktop-col-item
+                a.desktop-col-item__title(href="#") Заявка №46-2017, Испания
+                div.desktop-col-item__note
+                  a(href="#") Безумов Константин Николаевич
+          .column-grid__col
+            .column-grid__col-header
+              .column-grid__name Пятница
+              .column-grid__note 12 марта
+            .column-grid__col-item
+              .marker.marker_departure.marker_margin вылет 2
+              .desktop-col-item
+                a.desktop-col-item__title(href="#") Владимир Александрович Седунов
+                div.desktop-col-item__note
+                  | Тайланд,
+                  a(href="#") заявка №203-2017
+              .desktop-col-item
+                a.desktop-col-item__title(href="#") Александр Эдуардович Сабуров
+                div.desktop-col-item__note
+                  | Япония,
+                  a(href="#") заявка №203-2017
+            .column-grid__col-item
+              .marker.marker_task.marker_margin задачи
+              .desktop-col-item
+                a.desktop-col-item__title(href="#") Позвонить 10 августа в 17:00
+                div.desktop-col-item__note
+                  | Средний, ответственный Алексей
+                div.desktop-col-item__description Позвонить Александру Сабурову и узнать, что там по-поводу Японии он решил
+          .column-grid__col
+            .column-grid__col-header
+              .column-grid__name Суббота
+              .column-grid__note 13 марта
+            .column-grid__col-item
+              .marker.marker_birthday.marker_margin день рождения 2
+              .desktop-col-item
+                a.desktop-col-item__title(href="#") Александр Сабуров
+                div.desktop-col-item__note
+                  | Клиент компании
+              .desktop-col-item
+                a.desktop-col-item__title(href="#") Ивашкин Станислав Олегович
+                div.desktop-col-item__note
+                  | Обращался и не купил
+            .column-grid__col-item
+              .marker.marker_passport.marker_margin окончание загранпаспорта
+              .desktop-col-item
+                a.desktop-col-item__title(href="#") Петросян Виктор Николаевич
+                div.desktop-col-item__note
+                  | Клиент компании
+          .column-grid__col
+            .column-grid__col-header
+              .column-grid__name Воскресенье
+              .column-grid__note 14 марта
+            .column-grid__col-item
+              .marker.marker_contract.marker_margin окончание договора
+              .desktop-col-item
+                a.desktop-col-item__title(href="#") Пегас туристик
+                div.desktop-col-item__note
+                  | Срок действия - до 04.04.2017
+            .column-grid__col-item
+              .marker.marker_payment.marker_margin платежи 10
+              .desktop-col-item
+                a.desktop-col-item__title(href="#") Заявка №46-2017, 71 000 руб.
+                div.desktop-col-item__note
+                  | Клиент компании
+          .column-grid__col
+            .column-grid__col-header
+              .column-grid__name Понедельник
+              .column-grid__note 15 марта
+            .column-grid__col-item
+              .marker.marker_docs.marker_margin док-ты на визу
+              .desktop-col-item
+                a.desktop-col-item__title(href="#") Заявка №46-2017, Испания
+                div.desktop-col-item__note
+                  a(href="#") Безумов Константин Николаевич

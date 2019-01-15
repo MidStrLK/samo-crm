@@ -1,0 +1,86 @@
+.calendar-hor {
+	height: 48px;
+	overflow-y: visible; 
+	position: relative;
+	&__wrapper {
+		height: 54px;
+		position: relative;
+		overflow-x: hidden;
+	}
+	&__drag{
+		position: absolute;
+	}
+	&__item {
+		float:left;
+		display: table;
+	}
+	&__month {
+		height: 48px;
+		padding:0 6px 0 20px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	&__day {
+		width: 43px;
+		min-width: 43px;
+		height: 48px;
+		text-align: center;
+		vertical-align: middle;
+		display: table-cell;
+		position: relative;
+		&_chosen {
+			background-color: #EBF3F0;
+		}
+		&_current:before {
+			content:"";
+			border:2px solid #D06969;
+			display: block;
+			z-index: 1;
+			position: absolute;
+			bottom:0px;
+			left:0px;
+			right:0px;
+			top:0px;
+		}
+	}
+	&__note {
+		font-size: 11px;
+		font-weight: 500;
+		color:$grey-t;
+		&_weekend {
+			color:$green-t;
+		}
+	}
+	&__text {
+		font-size: 13px;
+	}
+	&__markers {
+		position: absolute;
+		bottom:-2px;
+		z-index: 1;
+		left:50%;
+		transform: translate(-50%, 0);
+		display: table;
+	}
+	&__marker {
+	    width: 5px;
+	    height: 5px;
+	    margin:0 1.5px;
+	    float:left;
+	    border-radius: 100%;
+	}
+	&:before, &:after {
+		content: "";
+		height: 1px;
+		position: absolute;
+		left:0px;
+		right:0px;
+		background-color: $border;
+	}
+	&:before {
+		top:0px;
+	}
+	&:after {
+		bottom:0px;
+	}	
+}

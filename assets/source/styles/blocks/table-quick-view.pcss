@@ -1,0 +1,70 @@
+.table-quick-view {
+  &__block {
+    padding:24px 26px 27px;
+    background-color: #fff;
+    border-bottom: 1px solid $border;
+    &_without-padding {
+      padding:0px;
+    }
+    &_grey {
+      background-color: $grey;
+    }
+    &:last-child {
+      border-bottom:0px;
+    }
+  }
+  &__quick-creation {
+    margin:18px 0 4px;
+  }
+  &__num-stats {
+    margin-top: 19px;
+  }
+  &__block-with-tabs {
+    padding:0px 26px 27px;
+  }
+  &__statistic {
+    padding:7px 0;
+    margin-bottom: 17px;
+    height: 270px;
+    border:1px solid $border;
+    background-color: #fff;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  &__first-col {
+    width: 50%;
+    background-color: $grey;
+    border-right:1px solid $border;
+    position: absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    &_large {
+      width: auto;
+      right:460px;
+    }
+  }
+  &__second-col {
+    width: 50%;
+    position: absolute;
+    top:0px;
+    bottom:0px;
+    right:0px;
+    &_large {
+      width: 460px;
+    }
+  }
+  &__tab {
+    display: none;
+    &_active {
+      display: block;
+    }
+  }
+  &__size {
+    display: none;
+    &_active {
+      display: block;
+    }
+  }
+}

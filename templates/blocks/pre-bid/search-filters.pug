@@ -1,0 +1,162 @@
+.blackout.blackout_table
+  .search-filters(id="prebid-filters")
+    .toggle.search-filters__tabs
+      .toggle__item.header__toggle-item.toggle__item_is-active Основные параметры
+      .toggle__item.header__toggle-item Качество работы
+      .toggle__item.header__toggle-item Пожелания клиента
+    .search-filters__content
+      .field-cols
+        .field-cols__col
+          .field-list
+            .field.field-list__item
+              .field__name Создана:
+              .field__value
+                .field__col-two
+                  .field__col
+                    input.field__text-input(placeholder="От")
+                  .field__col-separator -
+                  .field__col
+                    input.field__text-input(placeholder="До")
+            .field.field-list__item
+              .field__name Статус:
+              .field__value
+                .select(data-placeholder="...")
+                  select.select__default
+                    option(selected, disabled)
+                    option Первая опция
+                    option Вторая опция
+                    option Третья опция
+            .field.field-list__item
+              .field__name Реклама:
+              .field__value
+                .select(data-placeholder="...")
+                  select.select__default
+                    option(selected, disabled)
+                    option Первая опция
+                    option Вторая опция
+                    option Третья опция
+            .field.field-list__item
+              .field__name Тип клиента:
+              .field__value
+                .select(data-placeholder="...")
+                  select.select__default
+                    option(selected, disabled)
+                    option Первая опция
+                    option Вторая опция
+                    option Третья опция
+        .field-cols__col
+          .field-list
+            .field.field-list__item
+              .field__name Фирма:
+              .field__value
+                .select(data-placeholder="...")
+                  select.select__default
+                    option(selected, disabled)
+                    option Первая опция
+                    option Вторая опция
+                    option Третья опция
+            .field.field-list__item
+              .field__name Офис:
+              .field__value
+                .select(data-placeholder="...")
+                  select.select__default
+                    option(selected, disabled)
+                    option Первая опция
+                    option Вторая опция
+                    option Третья опция
+            .field.field-list__item
+              .field__name Ответственный:
+              .field__value
+                .select(data-placeholder="...")
+                  select.select__default
+                    option(selected, disabled)
+                    option Первая опция
+                    option Вторая опция
+                    option Третья опция
+            .field.field-list__item
+              .field__name Отмечена:
+              .field__value
+                .field__equal-cols
+                  .field__equal-col
+                    label.radio
+                      input(type="radio").radio__input
+                      span.desktop__type-checkbox
+                      div.radio__text Все
+                  .field__equal-col
+                    label.radio
+                      input(type="radio").radio__input
+                      span.desktop__type-checkbox
+                      div.radio__text Да
+                  .field__equal-col
+                    label.radio
+                      input(type="radio").radio__input
+                      span.desktop__type-checkbox
+                      div.radio__text Нет
+      .field-cols
+        .field-cols__col
+          .subtitle.subtitle_margin-top О главном
+          .field-list
+            .field.field-list__item
+              .field__name Вероятность:
+              .field__value
+                .field__col-two
+                  .field__col
+                    input.field__text-input(placeholder="От")
+                  .field__col-separator -
+                  .field__col
+                    input.field__text-input(placeholder="До")
+            .field.field-list__item
+              .field__name Состояние:
+              .field__value
+                .field__equal-cols
+                  .field__equal-col
+                    label.radio
+                      input(type="radio").radio__input
+                      span.desktop__type-checkbox
+                      div.radio__text Все
+                  .field__equal-col
+                    label.radio
+                      input(type="radio").radio__input
+                      span.desktop__type-checkbox
+                      div.radio__text Активны
+                  .field__equal-col
+                    label.radio
+                      input(type="radio").radio__input
+                      span.desktop__type-checkbox
+                      div.radio__text В архиве
+        .field-cols__col
+          .subtitle.subtitle_margin-top Подборки
+          .field-list
+            .field.field-list__item
+              .field__name Подборки:
+              .field__value
+                .field__equal-cols
+                  .field__equal-col
+                    label.radio
+                      input(type="radio").radio__input
+                      span.desktop__type-checkbox
+                      div.radio__text Все
+                  .field__equal-col
+                    label.radio
+                      input(type="radio").radio__input
+                      span.desktop__type-checkbox
+                      div.radio__text Есть
+                  .field__equal-col
+                    label.radio
+                      input(type="radio").radio__input
+                      span.desktop__type-checkbox
+                      div.radio__text Нет
+            .field.field-list__item
+              .field__name Кол-во туров:
+              .field__value
+                .field__col-two
+                  .field__col
+                    input.field__text-input(placeholder="От")
+                  .field__col-separator -
+                  .field__col
+                    input.field__text-input(placeholder="До")
+    .search-filters__buttons
+      a.icon-link.icon-link_pseudo.icon-link_erase.search-filters__erase
+        span.icon-link__span Очистить фильтры
+      button.button.search-filters__accept Применить фильтры
+      a.pseudo.search-filters__save(href="#") Сохранить данные фильтра

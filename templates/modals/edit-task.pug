@@ -1,0 +1,16 @@
+.modal(data-modal="edit-task")
+  .quick-creation.quick-creation_without-border.quick-creation_modal.quick-creation_active
+    .quick-creation__header
+      .quick-creation__header-left
+        | Задача
+      .quick-creation__header-right
+        label.quick-creation__type.quick-creation__type_1.quick-creation__type_active(href="#")
+          input(type="radio", name="type", checked)
+          span
+        label.quick-creation__type.quick-creation__type_2(href="#")
+          input(type="radio", name="type")
+          span
+        label.quick-creation__type.quick-creation__type_3(href="#")
+          input(type="radio", name="type")
+          span
+    include ./../blocks/quick-creation/conversation

@@ -1,0 +1,29 @@
+.arrow-link {
+	&:after {
+		content:"";
+		width: 6px;
+		height: 4px;
+		margin: 0 0 1px 4px;
+		background:svg-load("../img/svg/arrow-link.svg", fill: $black) no-repeat center;
+		display: inline-block;
+	}
+	&_grey {
+		color:$grey-t;
+		&:after {
+			background:svg-load("../img/svg/arrow-link.svg", fill: $grey-i) no-repeat center;
+		}
+	}
+	&__wrapper {
+		@mixin dashed-underline #D5D5D5;
+	    display: inline-block;
+	}
+	&:hover {
+		color:$green-t;
+		&:after {
+			background-image:svg-load("../img/svg/arrow-link.svg", fill: $green-t);
+		}
+		.arrow-link__wrapper {
+			@mixin dashed-underline #C2E0D5;
+		}
+	}
+}

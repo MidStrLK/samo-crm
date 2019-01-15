@@ -1,0 +1,64 @@
+.set-sequence {
+	width: 16px;
+	height: 16px;
+	position: relative;
+	&_abs {
+		position: absolute;
+	}
+	&__icon {
+		width: 16px;
+		height: 16px;
+		position: relative;
+		background-image: svg-load("../img/svg/settings.svg", fill: #000);
+		&_grey {
+			background-image: svg-load("../img/svg/settings.svg", fill: $grey-i);
+		}
+	}
+	&__modal {
+		width: 200px;
+		padding:14px 19px 16px;
+		border-radius: 3px;
+		border:1px solid $border;
+		box-shadow: 0 4px 7px 0 rgba(0,0,0,0.03);
+		background-color: #fff;
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		z-index: $z-small-modal;
+		right:-16px;
+		top:-16px;
+	}
+	&__title {
+		margin-bottom: 12px;
+	}
+	&__item {
+		padding-bottom: 8px;
+		transition: opacity 0.3s;
+		&_dim {
+			opacity: 0.25;
+		}
+	}
+	&__text {
+		width: 113px;
+		padding-top: 2px;
+		margin-left: 3px;
+		font-size: 12px;
+		@mixin crop;
+	}
+	&:hover {
+		.set-sequence__icon {
+			z-index: 4;
+		}
+		.set-sequence__modal {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+	&__marker {
+		width: 19px;
+		height: 19px;
+		float:right;
+		position: relative;
+		right:-6px;
+	}
+}

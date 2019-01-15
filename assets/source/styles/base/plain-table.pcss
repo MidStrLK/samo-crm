@@ -1,0 +1,31 @@
+.plain-table {
+  width: 100%;
+  font-size: 12px;
+  border-bottom:1px solid $border;
+  display: table;
+  &__thead {
+    color:$grey-t;
+    display: table-header-group;
+    .plain-table__col {
+      height: 26px;
+      vertical-align: top;
+    }
+  }
+  &__tbody {
+    display: table-row-group;
+    .plain-table__col {
+      height: 37px;
+      vertical-align: middle;
+      border-top:1px solid $border;
+    }
+  }
+  &__row {
+    display: table-row;
+  }
+  &__col {
+    max-width:0px;
+    padding-right: 15px;
+    display: table-cell;
+    @mixin crop;
+  }
+}

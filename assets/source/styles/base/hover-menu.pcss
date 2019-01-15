@@ -1,0 +1,80 @@
+.hover-menu {
+  position: relative;
+  display: table;
+  &:hover {
+    .hover-menu__menu {
+      opacity: 1;
+      visibility: visible;
+    }    
+  }
+  &__arrow-text {
+    span {
+      @mixin dashed-underline #D8D8D8;
+    }
+    &:after {
+      content:"";
+      width: 6px;
+      height: 6px;
+      margin-left: 4px;
+      background-image:svg-load("../img/svg/arrow-select.svg", fill: #000);
+      background-repeat:no-repeat;
+      background-position: right center;
+      background-size:6px;
+      display: inline-block;
+    }
+    &:hover {
+      cursor: pointer;
+      span {
+        color:$green-t;
+        @mixin dashed-underline #C2E0D5;
+      }
+      &:after {
+        background-image:svg-load("../img/svg/arrow-select.svg", fill: $green-t);
+      }
+    }
+  }
+  &__menu {
+    width: 175px;
+    padding:13px 16px 14px;
+    background-color: #fff;
+    border-radius:2px;
+    border:1px solid #F0F0F0;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, .03);
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+    position: absolute;
+    left:-15px;
+    top:21px;
+    z-index: 1;
+  }
+  &__menu-item {
+    margin-bottom: 7px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    &_active {
+      color:$green-t;
+      background:none;
+      &:hover {}
+    }
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  &_more {
+    width: 32px;
+    height: 22px;
+    background:svg-load("../img/svg/more.svg", fill=#000000) no-repeat center;
+    &:hover {
+      background-color: #eef7f4;
+      border-radius:2px;
+    }
+    .hover-menu__menu {
+      left:initial;
+      right:0px;
+      top:24px;
+    }
+  }
+}

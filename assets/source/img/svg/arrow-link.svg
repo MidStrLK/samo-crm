@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="4px" viewBox="0 0 6 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-link</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Навигация" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="напоминание" transform="translate(-289.000000, -137.000000)" fill="#000000">
+            <g id="search-copy" transform="translate(64.000000, 54.000000)">
+                <g id="input" transform="translate(30.000000, 17.000000)">
+                    <g id="Group-5" transform="translate(1.000000, 51.000000)">
+                        <path d="M194.599884,15.799846 C194.268577,15.3581032 194.450975,15 194.990778,15 L199.009222,15 C199.556414,15 199.73377,15.3549733 199.400116,15.799846 L197.599884,18.200154 C197.268577,18.6418968 196.73377,18.6450267 196.400116,18.200154 L194.599884,15.799846 Z" id="arrow-link"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

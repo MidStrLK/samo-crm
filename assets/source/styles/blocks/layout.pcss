@@ -1,0 +1,56 @@
+.layout {
+	background-color: $grey;
+	border-radius: 0 0 2px 2px;
+	position: absolute;
+	top:122px;
+	right:0;
+	bottom:0;
+	left:0;
+	display: none;
+	&_active {
+		display: block;
+	}
+	&__table {
+		background-color: #fff;
+		position: absolute;
+		top:0;
+		right:460px;
+		bottom:0;
+		left:0;
+		&_middle {
+			right:920px;
+		}
+		&_large {
+			right:1380px;
+		}
+	}
+	&__view {
+		width: 460px;
+		border-left:1px solid $border;
+		position: absolute;
+		top:0;
+		right:0;
+		bottom:0;
+		&_white {
+			background-color: #fff;
+		}
+		&_middle {
+			width:920px;
+		}
+		&_large {
+			width: 1380px;
+		}
+	}
+	&__detail {
+		display: none;
+		&_active {
+			display: block;
+		}
+	}
+	&__default {
+		display: block;
+		&_disabled {
+			display: none;
+		}
+	}
+}

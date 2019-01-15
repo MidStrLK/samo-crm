@@ -1,0 +1,24 @@
+.layout.scrollable(data-tab="graph")
+  .charts-layout
+    .charts-layout__filters
+      .charts-layout__filter
+        .field
+          .field__name Группируем:
+          .field__value
+            .select(data-placeholder="Выберите тип группировки")
+              select.select__default
+                option(selected, disabled)
+                option Первая опция
+                option Вторая опция
+                option Третья опция
+      .charts-layout__filter
+        .field
+          .field__name Сравниваем:
+          .field__value
+            .select(data-placeholder="Выберите свойство")
+              select.select__default
+                option(selected, disabled)
+                option Первая опция
+                option Вторая опция
+                option Третья опция
+    .charts-layout__chart(id="tab-chart")

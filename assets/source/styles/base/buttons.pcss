@@ -1,0 +1,44 @@
+.button {
+	height: 42px;
+	padding:0 14px;
+	background-color: #4FAB89;
+	border-radius:2px;
+	font-size: 12px;
+	line-height: 1;
+	font-weight: 500;
+	color:#fff;
+	display: table;
+	transition-duration: 0.3s;
+	&:hover {
+		background-color: #55CB9F;
+		cursor: pointer;
+	}
+	&:active {
+		background-color: #2F775C;
+	}
+	&_icon-add span {
+		position: relative;
+		top:-3px;
+		&:before {
+			width: 16px;
+			height: 16px;
+			background: svg-load("../img/svg/add_to.svg", fill=#FFFFFF) no-repeat center;
+			display: inline-block;
+			bottom: -4px;
+			margin-right: 5px;
+			position: relative;
+			content:"";
+		}
+	}
+	&_grey {
+		background-color: transparent;
+		color:$black;
+		border:2px solid #E9E9E9;
+		&:hover {
+			background-color: #F5F5F5;
+		}
+		&:active {
+			background-color: #E9E9E9;
+		}
+	}
+}

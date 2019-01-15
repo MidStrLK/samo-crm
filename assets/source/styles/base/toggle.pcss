@@ -1,0 +1,38 @@
+.toggle {
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	&__item {
+		height: 38px;
+		padding:0px 15px 0;
+		background-color: #FFFFFF;
+		border:1px solid #E3E3E3;
+		border-right-width: 0px;
+		text-align: center;
+		vertical-align: middle;
+		display: table-cell;
+		position: relative;
+		&_is-active {
+			background-color: #EBF3F0;
+			color:#348668;
+			border-color:#BFE2D5;
+			&:not(:last-child):before {
+				content:"";
+				width: 1px;
+				background-color: #BFE2D5;
+				position: absolute;
+				right:-1px;
+				top:-1px;
+				bottom:-1px;
+				z-index: 1;
+			}
+		}
+		&:first-child {
+			border-radius:3px 0 0 3px;
+		}
+		&:last-child {
+			border-radius:0 3px 3px 0;
+			border-right-width:1px;
+		}
+	}
+}

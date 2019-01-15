@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<head>
+  <title>САМО-КРМ</title>
+  <link rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="dev-layout">
+    <div class="dev-layout__block">
+      <h1 class="dev-layout__title">Быстрое создание задачи</h1>
+      <div class="dev-layout__item">
+        <div class="quick-creation quick-creation_double-form">
+          <div class="quick-creation__header">
+            <div class="quick-creation__header-left"><a class="quick-creation__tab quick-creation__tab_active" href="#" data-tab="conversation">Общение</a><a class="quick-creation__tab" href="#" data-tab="task">Задача</a></div>
+            <div class="quick-creation__header-right">
+              <label class="quick-creation__type quick-creation__type_1 quick-creation__type_active" href="#">
+                <input type="radio" name="type" checked><span></span>
+              </label>
+              <label class="quick-creation__type quick-creation__type_2" href="#">
+                <input type="radio" name="type"><span></span>
+              </label>
+              <label class="quick-creation__type quick-creation__type_3" href="#">
+                <input type="radio" name="type"><span></span>
+              </label>
+            </div>
+          </div>
+          <div class="quick-creation__content quick-creation__content_active" data-tab="conversation">
+            <div class="quick-creation__row">
+              <div class="field quick-creation__subject">
+                <div class="field__value">
+                  <div class="select" data-placeholder="Выберите тему">
+                    <select class="select__default">
+                      <option selected disabled></option>
+                      <option>Первая опция</option>
+                      <option>Вторая опция</option>
+                      <option>Третья опция</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <textarea class="quick-creation__description" placeholder="Введите описание"></textarea>
+            <div class="quick-creation__footer">
+              <div class="quick-creation__footer-right">
+                <button class="quick-creation__send">Добавить</button>
+              </div>
+              <div class="quick-creation__footer-left">
+                <div class="quick-creation__footer-col quick-creation__footer-col_associated">
+                  <div class="quick-creation__footer-col-crop"><a class="pseudo" href="#">Предзаявка №1234</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="quick-creation__content" data-tab="task">
+            <div class="quick-creation__row">
+              <div class="quick-creation__task-settings">На <a class="pseudo" href="#">Сегодня </a> на <a class="pseudo" href="#">Весь день</a>, <a class="pseudo" href="#">Средний  </a> приоритет</div>
+            </div>
+            <textarea class="quick-creation__description" placeholder="Введите описание"></textarea>
+            <div class="quick-creation__footer">
+              <div class="quick-creation__footer-right">
+                <button class="quick-creation__send">Добавить</button>
+              </div>
+              <div class="quick-creation__footer-left">
+                <div class="quick-creation__footer-col quick-creation__footer-col_responsible">
+                  <div class="quick-creation__footer-col-crop"><a class="pseudo" href="#">Булычева Ольга Булычева</a></div>
+                </div>
+                <div class="quick-creation__footer-col quick-creation__footer-col_associated">
+                  <div class="quick-creation__footer-col-crop"><a class="pseudo" href="#">Предзаявка №1234</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dev-layout__block">
+      <h1 class="dev-layout__title">Поля форм</h1>
+      <div class="dev-layout__subtitle">Разворачивающийся список</div>
+      <div class="dev-layout__item">
+        <div class="field">
+          <div class="field__name">Тип клиента</div>
+          <div class="field__value">
+            <div class="select" data-placeholder="Выберите тип">
+              <select class="select__default">
+                <option selected disabled></option>
+                <option>Первая опция</option>
+                <option>Вторая опция</option>
+                <option>Третья опция</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dev-layout__subtitle">Разворачивающийся список с созданием пунктов</div>
+      <div class="dev-layout__item">
+        <div class="field">
+          <div class="field__name">Тип клиента</div>
+          <div class="field__value">
+            <div class="select" data-editable="true">
+              <select class="select__default">
+                <option selected disabled></option>
+                <option>Первая опция</option>
+                <option>Вторая опция</option>
+                <option>Третья опция</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dev-layout__subtitle">Текстовое поле</div>
+      <div class="dev-layout__item">
+        <label class="field">
+          <div class="field__name">Email</div>
+          <div class="field__value">
+            <input class="field__text-input" placeholder="Введите текст">
+          </div>
+        </label>
+      </div>
+      <div class="dev-layout__subtitle">Поле с возможностью добавления пунктов</div>
+      <div class="dev-layout__item">
+        <div class="field">
+          <div class="field__name">Email</div>
+          <div class="field__value">
+            <div class="editable-inputs">
+              <div class="editable-inputs__item">
+                <div class="editable-inputs__field">
+                  <input class="editable-inputs__input" placeholder="Введите текст">
+                </div><a class="editable-inputs__toggle editable-inputs__toggle_add" href="#"></a>
+              </div>
+              <div class="editable-inputs__item">
+                <div class="editable-inputs__field">
+                  <input class="editable-inputs__input" placeholder="Введите текст">
+                </div><a class="editable-inputs__toggle editable-inputs__toggle_minus" href="#"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dev-layout__subtitle">Выбор даты</div>
+      <div class="dev-layout__item">
+        <label class="field">
+          <div class="field__name">Дата создания</div>
+          <div class="field__value">
+            <input class="field__date-input" placeholder="Выберите дату">
+          </div>
+        </label>
+      </div>
+      <div class="dev-layout__subtitle">Вероятность покупки</div>
+      <div class="dev-layout__item">
+        <div class="field">
+          <div class="field__name">Вероятность:</div>
+          <div class="field__value field__value_progress">
+            <div class="progress-bar">
+              <div class="progress-bar__line" style="width:45%;"></div>
+              <div class="progress-bar__base"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dev-layout__subtitle">Сравнение валют</div>
+      <div class="dev-layout__item">
+        <div class="field">
+          <div class="field__name">К оплате:</div>
+          <div class="field__value">
+            <div class="field__col-two">
+              <div class="field__col">
+                <label class="field__currency">
+                  <div class="field__currency-input-col">
+                    <input class="field__text-input field__text-input_right-padding" placeholder="Введите сумму">
+                  </div>
+                  <div class="field__currency-type">RUB</div>
+                </label>
+              </div>
+              <div class="field__col-separator">≈</div>
+              <div class="field__col">
+                <label class="field__currency">
+                  <div class="field__currency-input-col">
+                    <input class="field__text-input field__text-input_right-padding" placeholder="Введите сумму">
+                  </div>
+                  <div class="field__currency-type">USD</div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dev-layout__subtitle">От и до</div>
+      <div class="dev-layout__item">
+        <div class="field">
+          <div class="field__name">Ночей:</div>
+          <div class="field__value">
+            <div class="field__col-two">
+              <div class="field__col">
+                <input class="field__text-input" placeholder="От">
+              </div>
+              <div class="field__col-separator">-</div>
+              <div class="field__col">
+                <input class="field__text-input" placeholder="До">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dev-layout__subtitle">Примечание</div>
+      <div class="dev-layout__item">
+        <label class="field">
+          <div class="field__name">Примечание:</div>
+          <div class="field__value">
+            <textarea class="field__textarea"></textarea>
+          </div>
+        </label>
+      </div>
+      <div class="dev-layout__subtitle">Поле с несколькими чекбоксами</div>
+      <div class="dev-layout__item">
+        <div class="field">
+          <div class="field__name">Примечание:</div>
+          <div class="field__value">
+            <div class="field__equal-cols">
+              <div class="field__equal-col">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox"><span class="desktop__type-checkbox"></span>
+                  <div class="checkbox__text">Пример текста Пример текста</div>
+                </label>
+              </div>
+              <div class="field__equal-col">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox"><span class="desktop__type-checkbox"></span>
+                  <div class="checkbox__text">Пример текста</div>
+                </label>
+              </div>
+              <div class="field__equal-col">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox"><span class="desktop__type-checkbox"></span>
+                  <div class="checkbox__text">Пример текста</div>
+                </label>
+              </div>
+              <div class="field__equal-col">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox"><span class="desktop__type-checkbox"></span>
+                  <div class="checkbox__text">Пример текста</div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dev-layout__subtitle">Один чекбокс в строке</div>
+      <div class="dev-layout__item">
+        <div class="field">
+          <div class="field__value">
+            <div class="field__equal-cols">
+              <div class="field__equal-col">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox"><span class="desktop__type-checkbox"></span>
+                  <div class="checkbox__text">Пример текста Пример текста</div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/min.libraries.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
